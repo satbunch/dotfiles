@@ -1,0 +1,8 @@
+require("satomi.plugins-setup")
+require("satomi.core.options")
+require("satomi.core.keymaps")
+require("satomi.core.colorscheme")
+require("satomi.plugins.comment")
+require("satomi.plugins.nvim-tree")
+require("satomi.plugins.lualine") 
+require("satomi.plugins.telescope")
