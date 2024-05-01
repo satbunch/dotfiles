@@ -5,7 +5,7 @@ unbind C-b
 set -g prefix C-g
 
 # プレフィックスキー+^でペインを垂直分割する
-bind | split-window -h
+bind ^ split-window -h
 
 # プレフィックスキー+-でペインを水平分割する
 bind - split-window -v
@@ -36,5 +36,5 @@ bind -r l select-pane -R
 setw -g window-status-current-format "#[bg=default,fg=colour10,reverse]▓▒░ #W ░▒▓"
 setw -g window-status-format "#[bg=default,fg=colour8,reverse]▓▒░ #W ░▒▓"
 
-# status set center
-set -g status-justify centre
+# status-line set top
+set-option -g status-position top
