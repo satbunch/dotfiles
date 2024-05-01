@@ -14,6 +14,10 @@ keymap.set("n", "-", "<C-x>")
 -- Select All
 keymap.set("n", "<C-a>", "gg<S-v>G")
 
+-- New tab
+keymap.set("n", "te", ":tabedit")
+keymap.set("n", "<tab>", ":tabnext<Return>")
+keymap.set("n", "<s-tab>", ":tabprev<Return>")
 -- Split window
 keymap.set("n", "ss", ":split<Return>", opts)
 keymap.set("n", "sv", ":vsplit<Return>", opts)
@@ -24,9 +28,6 @@ keymap.set("n", "sj", "<C-w>j")
 keymap.set("n", "sl", "<C-w>l")
 
 -- Plugin keymaps
-
--- neo-tree
-keymap.set("n", "<leader>e", ":Neotree<CR>")
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
