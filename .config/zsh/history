@@ -1,0 +1,2003 @@
+: 1696804552:0;ls -la ~/
+: 1696804552:0;vim ~/.zshrc
+: 1696804552:0;source ~/.zshrc
+: 1696804552:0;vim ~/.zshrc
+: 1696804552:0;source ~/.zshrc
+: 1696804552:0;cd ~
+: 1696804552:0;git clone https://github.com/powerline/fonts
+: 1696804552:0;cd fonts
+: 1696804552:0;./install.sh
+: 1696804552:0;cd ..
+: 1696804552:0;rm -rf fonts
+: 1696804552:0;source ~/.zshrc
+: 1696804552:0;ls
+: 1696804552:0;cd ~
+: 1696804552:0;ls
+: 1696804552:0;ls -la ~/
+: 1696804552:0;cd .oh-my-zsh/themes
+: 1696804552:0;ls
+: 1696804552:0;vim agnoster.zsh-theme
+: 1696804552:0;echo $PS1
+: 1696804552:0;vim ~/.zshrc
+: 1696804552:0;source ~/.zshrc
+: 1696804552:0;echo $PS1
+: 1696804552:0;vim ~/.zshrc
+: 1696804552:0;echo $PS1
+: 1696804552:0;source ~/.zshrc
+: 1696804552:0;cata
+: 1696804552:0;cat ~/.zshrc
+: 1696804552:0;~ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"\
+
+: 1696804552:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"\
+
+: 1696804533:0;PS1='Hello Prompt! \# \t \w \$ '
+: 1696804569:0;vim ~/.zshrc
+: 1696804673:0;source ~/.zshrc
+: 1696804720:0;echo $PS1
+: 1696804793:0;vim ~/.zshrc
+: 1696804934:0;source ~/.zshrc
+: 1696805026:0;vim ~/.zshrc
+: 1696805292:0;source ~/.zshrc
+: 1696805310:0;echo PS1
+: 1696805336:0;echo $PS1
+: 1696805559:0;vim ~/.zshrc
+: 1696805788:0;git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+: 1696805801:0;vim ~/.zshrc
+: 1696805848:0;source ~/.zshrc
+: 1696805877:0;brew cask install font-hack-nerd-font
+: 1696805909:0;/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+: 1696806343:0;echo $SHELL
+: 1696806364:0;brew cask install font-hack-nerd-font
+: 1696806436:0;brew install font-hack-nerd-font --cask
+: 1696806562:0;brew tap homebrew/cask-fonts
+: 1696806583:0;brew install font-Hack-nerd-font
+: 1696806737:0;echo $SHELL -l
+: 1696806840:0;vim ~/.zshrc
+: 1696806972:0;echo $SHELL -l
+: 1696806977:0;source ~/.zshrc
+: 1696807055:0;git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+: 1696807062:0;vim ~/.zshrc
+: 1696807120:0;source ~/.zshrc
+: 1696807148:0;git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+: 1696807160:0;vim ~/.zshrc
+: 1696807220:0;source ~/.zshrc
+: 1696807268:0;brew install fzf
+: 1696807288:0;$(brew --prefix)/opt/fzf/install
+: 1696807369:0;vim ~/.zshrc
+: 1696807452:0;source ~/.zshrc
+: 1696811101:0;brew update
+: 1696811122:0;brew install lua
+: 1696811153:0;brew install macvim --devel --with-lua
+: 1696811318:0;brew install macvim --with-lua
+: 1696811368:0;brew install macvi
+: 1696811376:0;brew install macvim
+: 1696811584:0;vim ~/.zshrc
+: 1701735372:0;vimtutor
+: 1701779320:0;ls
+: 1701779355:0;cd Documents
+: 1702905868:0;brew install neovim
+: 1702906006:0;nvim
+: 1702906027:0;find .config
+: 1702906039:0;find nvim
+: 1702906140:0;nvim -version
+: 1702906173:0;cd ~./config/
+: 1702906177:0;cd ~
+: 1702906179:0;ls
+: 1702906189:0;cd .config
+: 1702906191:0;ls
+: 1702906628:0;mkdir nvim && cd nvim
+: 1702906682:0;alias v='nvim'
+: 1702906694:0;v init.lua
+: 1702906780:0;nvim
+: 1702907060:0;v init.lua
+: 1702935043:0;nvim
+: 1702935366:0;alias vim='nvim'
+: 1702935374:0;vim init.lua
+: 1702935597:0;nvim
+: 1702935792:0;git --version
+: 1702935995:0;nvim
+: 1702936320:0;brew install tmux
+: 1702936348:0;tmux -version
+: 1702936369:0;tmux -
+: 1702936374:0;tmux -v
+: 1702936392:0;exit
+: 1702936410:0;tmux
+: 1702936482:0;exit
+: 1702936488:0;cd ~
+: 1702936517:0;touch .tmux.conf
+: 1702936534:0;vim .tmux.conf
+: 1702936645:0;tmux source .tmux.conf
+: 1702936659:0;tmux source ~/.tmux.conf
+: 1702936666:0;tmux
+: 1702936820:0;wxit
+: 1702936822:0;exit
+: 1702936841:0;vim .tmux.conf
+: 1702937020:0;tmux
+: 1702937177:0;ls
+: 1702937196:0;cd .config/nvim/
+: 1702937197:0;ls
+: 1702937209:0;vim init.lua
+: 1702937236:0;nvim
+: 1702937434:0;cd .config
+: 1702937453:0;ls
+: 1702937498:0;cd ..
+: 1702937506:0;vim .tmux.conf
+: 1702937559:0;nvim
+: 1702937585:0;tmux source ~/.tmux.conf
+: 1702937592:0;nvim
+: 1702938112:0;vim .tmux.conf
+: 1702938212:0;tmux source ~/.tmux.conf
+: 1702938231:0;nvim
+: 1702939126:0;python -v
+: 1702939161:0;brew info python
+: 1702939236:0;pip3 install
+: 1702939281:0;python3.11 -m pip install -upgrade pip
+: 1702939370:0;python3.11 -m pip install --upgrade pip
+: 1702939383:0;pip3 install
+: 1702939395:0;pip help install
+: 1702939439:0;import neovim
+: 1702939521:0;nvim
+: 1702944765:0;python3 -m pip install --user --upgrade pynvim
+: 1702944782:0;nvim
+: 1702964361:0;tmux
+: 1702964418:0;clear
+: 1702994846:0;vim
+: 1702994926:0;clear
+: 1702994998:0;tmux
+: 1702995030:0;nvim
+: 1702995065:0;gem install neovim
+: 1702995167:0;cd /Library/Ruby/Gems/2.6.0
+: 1702995168:0;ls
+: 1702995239:0;cd ~
+: 1702995245:0;which gem
+: 1702995256:0;which ruby
+: 1702995265:0;brew update
+: 1702995311:0;brew install rbenv ruby-build
+: 1702995471:0;rbenv versions
+: 1702995486:0;rbenv -l
+: 1702995499:0;rbenv install -l
+: 1702995544:0;rbenv install 3.2.2
+: 1702996611:0;rbenv versions
+: 1702996629:0;rbenv global 3.2.2
+: 1702996632:0;rbenv versions
+: 1702996683:0;vim .zshrc
+: 1702996779:0;tmux
+: 1702996800:0;nvim
+: 1702996827:0;which ruby
+: 1702996836:0;which rbenv
+: 1702996847:0;which gem
+: 1702996883:0;gem install neovim
+: 1702996919:0;gem environment
+: 1702997092:0;nvim
+: 1702997366:0;brew install npm
+: 1702997491:0;npm -version
+: 1702997531:0;brew install nodebrew
+: 1702997756:0;echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> ~/.zshrc
+: 1702997774:0;source ~/.zshrc
+: 1702997785:0;nodebrew -v
+: 1702997837:0;nodebrew install latest
+: 1702997895:0;cd /Users/satomiyoshio/.nodebrew
+: 1702997917:0;cd /Users/satomiyoshio
+: 1702997937:0;touch .nodebrew
+: 1702997940:0;ls
+: 1702997952:0;ls -h
+: 1702997956:0;ls -e
+: 1702997964:0;nodebrew install latest
+: 1702998015:0;nodebrew ls-remote
+: 1702998037:0;nodebrew install-binary latest
+: 1702998113:0;rm -rf .nodebrew
+: 1702998122:0;mkdir .nodebrew
+: 1702998135:0;cd .nodebrew
+: 1702998142:0;mkdir src
+: 1702998149:0;nodebrew install-binary latest
+: 1702998225:0;cd ..
+: 1702998235:0;nodebrew ls
+: 1702998250:0;nodebrew use v21.4.0
+: 1702998256:0;nodebrew ls
+: 1702998264:0;node -v
+: 1702998270:0;npm -v
+: 1702998282:0;nvim 
+: 1702998314:0;npm install -g neovim
+: 1702998362:0;vim .config/nvim/init.lua
+: 1702998426:0;nvim
+: 1703080557:0;ls
+: 1703080567:0;cd .config/nvim
+: 1703080569:0;ls
+: 1703080575:0;nvim init.lua
+: 1703164560:0;defaults write com.apple.finder AppleShowAllFiles TRUE
+: 1703164596:0;killall Finder
+: 1703338602:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
+: 1703338623:0;mv ~/.config/nvim{,.bak}
+: 1703338635:0;mv ~/.local/share/nvim{,.bak}
+: 1703338645:0;mv ~/.local/state/nvim{,.bak}
+: 1703338654:0;mv ~/.cache/nvim{,.bak}
+: 1703338663:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
+: 1703338680:0;rm -rf ~/.config/nvim/.git
+: 1703338688:0;nvim
+: 1703340323:0;brew install repgrep
+: 1703340367:0;brew install ripgrep
+: 1703340381:0;nvim
+: 1703340449:0;nvim ini
+: 1703340471:0;nvim init.lua
+: 1703340526:0;fd
+: 1703340536:0;brew install fd
+: 1703340548:0;fd lua
+: 1703340669:0;q
+: 1703340671:0;exit
+: 1703340724:0;fd lua
+: 1703340841:0;exit
+: 1703462085:0;tmux
+: 1703462095:0;exit
+: 1703462501:0;nvim
+: 1703464005:0;nvim init.lua
+: 1703464028:0;nvim .config/nvim/init.lua
+: 1703464046:0;cd .config/nvim/
+: 1703464047:0;ls
+: 1703464062:0;cd lua
+: 1703464063:0;ls
+: 1703464069:0;nvim config
+: 1703466779:0;ls
+: 1703466804:0;nvim plugins/example.lua 
+: 1703467470:0;clear
+: 1703467476:0;nvim plugins/example.lua 
+: 1703468113:0;nvim
+: 1703468135:0;nvim plugins/example.lua 
+: 1703468220:0;nvim
+: 1703469144:0;cd ~
+: 1703469158:0;nvim example.java
+: 1703469321:0;javac
+: 1703469337:0;javac example.java
+: 1704808101:0;nvim
+: 1704808165:0;clear
+: 1704808800:0;npm -v
+: 1704808886:0;node -v
+: 1704808944:0;npm install -g typescript
+: 1704809626:0;ls
+: 1704809630:0;cd Desktop
+: 1704809632:0;ls
+: 1704809650:0;rm -rf Understanding-TS
+: 1704809713:0;git clone https://github.com/yoshio1949/Understanding-TypeScript.git
+: 1704809725:0;git remote
+: 1704809735:0;cd Understanding-TypeScript
+: 1704809746:0;git remote
+: 1704809751:0;git remote -v
+: 1704809771:0;code .
+: 1704809783:0;cd ..
+: 1704809789:0;cd Understanding-TypeScript
+: 1704810078:0;cd ~
+: 1704810081:0;ls
+: 1704810092:0;cd /
+: 1704810096:0;ls
+: 1704810105:0;cd Users/satomiyoshio
+: 1704810107:0;ls
+: 1704810146:0;touch .zshrc
+: 1704810149:0;ls
+: 1704810171:0;ls -a
+: 1704810205:0;nvim .zshrc
+: 1704810767:0;cd Desktop/Understanding-TypeScript
+: 1704810771:0;code .
+: 1704810917:0;npm start
+: 1704810999:0;npm install
+: 1704811034:0;cd Understanding-TS-Section4
+: 1704811038:0;npm start
+: 1704811051:0;npm install
+: 1704811098:0;npm start
+: 1704811127:0;cd Understanding-TS-Section4
+: 1704811141:0;tsc -w
+: 1704845607:0;git config --global user.email "bump.satomi2331@gmail.com"
+: 1704845640:0;git config --global user.name "Satomi1949Mac"
+: 1704933826:0;nvim .zshrc
+: 1704933836:0;ls
+: 1704933841:0;cd ~
+: 1704933848:0;nvim .zshrc
+: 1705102159:0;cd Desktop/Understanding-TypeScript
+: 1705102177:0;git checkout main
+: 1705102182:0;git pull
+: 1705123302:0;cd ~
+: 1705123306:0;tail -f ~/Library/Logs/CoreSimulator/CoreSimulator.log\
+
+: 1705123383:0;sudo chmod -R 777 /private/tmp
+: 1705123579:0;tail -f ~/Library/Logs/CoreSimulator/CoreSimulator.log\
+
+: 1705123811:0;<Error>: Could not register service com.apple.gpu
+: 1705123827:0;tail -f ~/Library/Logs/CoreSimulator/CoreSimulator.log\
+
+: 1705123926:0;sudo rm -rf /Applications/Xcode.app
+: 1705123995:0;sudo rm -rf /Library/Preferences/com.apple.dt.Xcode.plist
+: 1705124003:0;sudo rm -rf ~/Library/Preferences/com.apple.dt.Xcode.plist
+: 1705124009:0;sudo rm -rf ~/Library/Caches/com.apple.dt.Xcode
+: 1705124016:0;sudo rm -rf ~/Library/Application Support/Xcode
+: 1705124023:0;sudo rm -rf ~/Library/Developer/Xcode
+: 1705124034:0;sudo rm -rf ~/Library/Developer/CoreSimulator
+: 1705129263:0;tail -f ~/Library/Logs/CoreSimulator/CoreSimulator.log
+: 1705129307:0;CoreSimulatorService[25117] <Error>: Error Domain=com.apple.CoreSimulator.SimError Code=402 "Unable to determine suppoCoreSimulatorService[25117] <Error>: Error Domain=com.apple.CoreSimulator.SimError Code=402 "Unable to determine suppo
+: 1705130780:0;sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+: 1705130813:0;sudo xcodebuild -license
+: 1705131055:0;echo $SHELL
+: 1705133142:0;sudo rm -rf /Applications/Xcode.app
+: 1705133212:0;sudo rm -rf /Library/Preferences/com.apple.dt.Xcode.plist
+: 1705133221:0;sudo rm -rf ~/Library/Preferences/com.apple.dt.Xcode.plist
+: 1705133228:0;sudo rm -rf ~/Library/Caches/com.apple.dt.Xcode
+: 1705133236:0;sudo rm -rf ~/Library/Application Support/Xcode
+: 1705133243:0;sudo rm -rf ~/Library/Developer/Xcode
+: 1705133257:0;sudo rm -rf ~/Library/Developer/CoreSimulator
+: 1705133269:0;sudo rm -rf ~/Library/Developer/Xcode
+: 1705149702:0;clear
+: 1705149711:0;cd .config/nvim/
+: 1705149713:0;ls
+: 1705149716:0;ls -l
+: 1705149736:0;cd ../
+: 1705149737:0;ls
+: 1705149752:0;rm -rf nvim
+: 1705149766:0;rm -rf nvim.bak
+: 1705149768:0;ls
+: 1705149772:0;nvim
+: 1705149859:0;mkdir nvim
+: 1705149866:0;cd nvim
+: 1705150044:0;touch init.lua
+: 1705150051:0;mkdir lua
+: 1705150068:0;cd lua
+: 1705150073:0;mkdir satomi
+: 1705150076:0;cd satomi
+: 1705150099:0;mkdir core
+: 1705150109:0;mkdir plugins
+: 1705150176:0;touch plugins-setup.lua
+: 1705150210:0;cd core
+: 1705150237:0;touch colorschema.lua
+: 1705150252:0;touch keymaps.lua
+: 1705150258:0;touch options.lua
+: 1705150304:0;cd ../../../
+: 1705150305:0;ls
+: 1705150311:0;nvim init.lua
+: 1705150521:0;cd lua/satomi/core
+: 1705150524:0;ls
+: 1705150529:0;nvim options.lua
+: 1705150609:0;../../
+: 1705150612:0;../
+: 1705150613:0;ls
+: 1705150617:0;nvim i
+: 1705150625:0;ls
+: 1705150629:0;nvim init.lua
+: 1705150719:0;cd lua/satomi/core
+: 1705150731:0;rm colorschema.lua
+: 1705150740:0;touch colorscheme.lua
+: 1705150744:0;ls
+: 1705150763:0;cd ../../../
+: 1705150769:0;nvim init.lua
+: 1705150788:0;cd lua/satomi/core
+: 1705150793:0;clear
+: 1705150812:0;nvim options.lua
+: 1705295835:0;cd ..
+: 1705295837:0;ls
+: 1705295846:0;nvim plugins-setup.lua
+: 1705296432:0;cd ../..
+: 1705296437:0;cd ../
+: 1705296438:0;ls
+: 1705296442:0;cd nvim
+: 1705296444:0;ls
+: 1705296449:0;nvim init.lua
+: 1705296536:0;ls
+: 1705296554:0;cd lua/satomi/core
+: 1705296555:0;ls
+: 1705296562:0;cd ../
+: 1705296563:0;ls
+: 1705296573:0;nvim plugins-setup.lua
+: 1705304422:0;clear
+: 1705304433:0;cd core
+: 1705304436:0;nvim colorscheme.lua
+: 1705304783:0;nvim keymaps.lua
+: 1705306517:0;cd ../
+: 1705306519:0;ls
+: 1705306525:0;nvim plugins-setup.lua
+: 1705306987:0;nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+: 1705306991:0;nvim plugins-setup.lua
+: 1705308126:0;cd ../..
+: 1705308136:0;ls
+: 1705308141:0;nvim init.lua
+: 1705308169:0;cd lua/satomi/core
+: 1705308176:0;nvim plugins-setup.lua
+: 1705308192:0;ls
+: 1705308194:0;cd ..
+: 1705308197:0;nvim plugins-setup.lua
+: 1705309252:0;cd ../..
+: 1705309254:0;ls
+: 1705309257:0;nvim init.lua
+: 1705309276:0;cd lua/satomi
+: 1705309281:0;nvim plugins-setup.lua
+: 1705309335:0;cd plugins
+: 1705309345:0;touch comment.lua
+: 1705309384:0;nvim comment.lua
+: 1705309482:0;cd ../../..
+: 1705309486:0;nvim init.lua
+: 1705309551:0;clear
+: 1705309595:0;cd lua/satomi
+: 1705309599:0;nvim plugins-setup.lua
+: 1705309907:0;cd plugins
+: 1705309921:0;touch nvim-tree.lua
+: 1705309945:0;nvim nvim-tree.lua
+: 1705310144:0;cd ../../..
+: 1705310151:0;nvim init.lua
+: 1705310827:0;cd lua/satomi
+: 1705310831:0;ls
+: 1705310836:0;cd plugins
+: 1705310841:0;nvim nvim-tree.lua
+: 1705310947:0;cd ../../..
+: 1705310950:0;nvim init.lua
+: 1705311850:0;cd ../../
+: 1705311866:0;cd ~
+: 1705311869:0;ls -a
+: 1705311952:0;cd .config/nvim
+: 1705311961:0;ls
+: 1705311965:0;nvim init.lua
+: 1705312633:0;nvim
+: 1705312888:0;clear
+: 1705312890:0;nvim
+: 1705326412:0;mv ~/.config/nvim{,.bak}
+: 1705326415:0;ls
+: 1705326422:0;cd ../
+: 1705326423:0;ls
+: 1705326432:0;cd nvim.bak
+: 1705326435:0;tree
+: 1705326444:0;brew install tree
+: 1705326478:0;tree
+: 1705326497:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
+: 1705326502:0;cd ..
+: 1705326511:0;rm -rf ~/.config/nvim/.git
+: 1705326514:0;nvim
+: 1705326571:0;cd nvim
+: 1705326574:0;tree
+: 1705326582:0;nvim init.lua
+: 1705326725:0;nvim
+: 1705326762:0;ls
+: 1705326770:0;cd ../nvim.bak
+: 1705326773:0;ls
+: 1705326783:0;cd lua/satomi/core
+: 1705326788:0;nvim options.lua
+: 1705326843:0;cd ~./config/
+: 1705326854:0;cd ../../../../
+: 1705326857:0;nvim
+: 1705327359:0;cd nvim
+: 1705327361:0;tree
+: 1705327376:0;nvim
+: 1705392498:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
+: 1705392539:0;cd ../
+: 1705392542:0;ls
+: 1705392554:0;rm -rf nvim
+: 1705392557:0;ls
+: 1705392619:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
+: 1705392632:0;rm -rf ~/.config/nvim/.git
+: 1705392639:0;cd nvim
+: 1705392641:0;ls
+: 1705392649:0;tmux
+: 1705392694:0;cd ~
+: 1705392697:0;ls -a
+: 1705392718:0;nvim .tmux.conf 
+: 1705392776:0;nvim
+: 1705392814:0;tmux
+: 1705392854:0;sudo tmux
+: 1705392911:0;tmux
+: 1705393091:0;echo $SHELL
+: 1705393104:0;screen
+: 1705393164:0;exit
+: 1705393173:0;brew update tmux
+: 1705393187:0;brew upgrade tmux
+: 1705393194:0;tmux
+: 1705393381:0;nvim .tmux.conf 
+: 1705393415:0;tmux
+: 1705393568:0;find /private
+: 1705393597:0;cd /private
+: 1705393604:0;cd ..
+: 1705393614:0;path
+: 1705393621:0;echo path
+: 1705393633:0;tree
+: 1705393952:0;ls
+: 1705393961:0;cd dev
+: 1705393962:0;ls
+: 1705393974:0;cd ..
+: 1705393976:0;ls
+: 1705393985:0;cd private
+: 1705393986:0;ls
+: 1705393990:0;cd tmp
+: 1705393991:0;ls
+: 1705394000:0;cd tmux-501
+: 1705394001:0;ls
+: 1705394008:0;nvim default
+: 1705394275:0;tmux
+: 1705394303:0;exit
+: 1705394306:0;tmux
+: 1705394320:0;exit
+: 1705394336:0;cd /config
+: 1705394354:0;nvim .tmux.conf 
+: 1705394369:0;tmux
+: 1705394583:0;nvim
+: 1705394648:0;ls -a
+: 1705394667:0;cd .config/nvim
+: 1705394714:0;cd ../nvim.bak
+: 1705394715:0;ls
+: 1705394726:0;cd lua/satomi/core
+: 1705394735:0;nvim keymaps.lua
+: 1705394750:0;cd /config
+: 1705394756:0;cd .config/nvim
+: 1705394758:0;ls
+: 1705394766:0;cd lua
+: 1705394767:0;ls
+: 1705394772:0;cd config
+: 1705394774:0;ls
+: 1705394782:0;nvim keymaps.lua
+: 1705394957:0;nvim options.lua
+: 1705395031:0;ls
+: 1705395039:0;cd ..
+: 1705395040:0;ls
+: 1705395043:0;cd config
+: 1705395048:0;cd ..
+: 1705395169:0;ls
+: 1705395173:0;cd config
+: 1705395174:0;;s
+: 1705395176:0;ls
+: 1705395180:0;nvim lazy.lua
+: 1705395705:0;ls
+: 1705395715:0;cd ..
+: 1705395716:0;ls
+: 1705395720:0;cd plugins
+: 1705395721:0;ls
+: 1705395735:0;touch colorscheme.lua
+: 1705395741:0;nvim colorscheme.lua
+: 1705395832:0;nvim example.lua
+: 1705395889:0;cd ..
+: 1705395890:0;ls
+: 1705395896:0;cd ..
+: 1705395897:0;ls
+: 1705395900:0;nvim init.lua
+: 1705395927:0;cd lua/
+: 1705395932:0;cd config
+: 1705395934:0;ls
+: 1705395941:0;nvim init.lua
+: 1705395969:0;cd ..
+: 1705395971:0;ls
+: 1705395974:0;cd //
+: 1705395987:0;cd ~./config/nvim
+: 1705396005:0;cd ~/.config/nvim
+: 1705396006:0;ls
+: 1705396024:0;nvim init.lua
+: 1705396054:0;cd lua/config
+: 1705396056:0;ls
+: 1705396062:0;nvim lazy.lua
+: 1705396423:0;ls
+: 1705396429:0;cd ../plugins
+: 1705396438:0;rm -rf colorscheme.lua
+: 1705396446:0;cd ../..
+: 1705396447:0;ls
+: 1705396451:0;nvim init.lua
+: 1705396476:0;cd lua/config
+: 1705396477:0;ls
+: 1705396484:0;nvim lazy.lua
+: 1705410384:0;clear
+: 1705410389:0;nvim lazy.lua
+: 1705410918:0;ls
+: 1705410931:0;nvim lazy.lua
+: 1705410953:0;cd ..
+: 1705410956:0;ls
+: 1705410958:0;cd //
+: 1705410973:0;cd .confiq/nvim
+: 1705410979:0;cd ~/.config/nvim
+: 1705410980:0;ls
+: 1705410984:0;nvim init.lua
+: 1705410998:0;ls
+: 1705411002:0;cd lua/config
+: 1705411005:0;nvim la
+: 1705411016:0;nvim lasy.lua
+: 1705411022:0;;s
+: 1705411024:0;ls
+: 1705411035:0;nvim lasy.lua
+: 1705411044:0;ls
+: 1705411053:0;nvim lazy.lua 
+: 1705411285:0;cd ../plugins
+: 1705411293:0;touch colorscheme.lua
+: 1705411298:0;nvim colorscheme.lua
+: 1705411341:0;cd ../config
+: 1705411350:0;nvim lazy.lua
+: 1705411554:0;ls
+: 1705411564:0;nvim keymaps.lua
+: 1705411588:0;nvim options.lua
+: 1705411599:0;nvim keymaps.lua
+: 1705500248:0;cd ~
+: 1705500259:0;ls
+: 1705500266:0;mkdir App
+: 1705500268:0;ls
+: 1705500272:0;cd App
+: 1705500288:0;node -v
+: 1705500293:0;clear
+: 1705500310:0;mkdir Sample_App
+: 1705500313:0;cd Sample_App
+: 1705500333:0;java
+: 1705500357:0;touch index.html
+: 1705500362:0;nvim index.html
+: 1705500617:0;open index.html
+: 1705500626:0;nvim index.html
+: 1705500649:0;open index.html
+: 1705500664:0;nvim index.html
+: 1705500699:0;nvim options.lua
+: 1705500726:0;cd ~/.config/nvim/lua/config
+: 1705500730:0;ls
+: 1705500738:0;nvim options.lua
+: 1705500757:0;nvim keymaps.lua
+: 1705500877:0;cd ~/.config/nvim.bak
+: 1705500879:0;ls
+: 1705500884:0;cd plugins
+: 1705500888:0;cd plugin
+: 1705500889:0;ls
+: 1705500905:0;cd ../lua
+: 1705500907:0;ls
+: 1705500913:0;cd satomi
+: 1705500914:0;ls
+: 1705500918:0;cd plugins
+: 1705500920:0;ls
+: 1705500935:0;nvim nvim-tree.lua
+: 1705500958:0;cd ../plugins
+: 1705500960:0;ls
+: 1705500973:0;touch nvim-tree.lua
+: 1705500982:0;nvim nvim-tree.lua
+: 1705501574:0;vim example.lua
+: 1705501609:0;nvim nvim-tree.lua
+: 1705501631:0;nvim example.lua
+: 1705501676:0;rm -rf nvim-tree.lua
+: 1705501701:0;touch neo-tree.lua
+: 1705501709:0;nvim neo-tree.lua
+: 1705501868:0;rm -rf neo-tree.lua
+: 1705501874:0;nvim example.lua
+: 1705502158:0;nvim neo-tree.lua
+: 1705502607:0;mv example.lua plugins.lua
+: 1705502613:0;nvim plugins.lua
+: 1705502787:0;nvim plugin
+: 1705502791:0;nvim plugins.lua
+: 1705502807:0;nvim neo-tree.lua
+: 1705502862:0;ls
+: 1705502871:0;cd ..
+: 1705502873:0;ls
+: 1705502881:0;cd config
+: 1705502883:0;;s
+: 1705502885:0;ls
+: 1705502888:0;nvim lazy.lua
+: 1705538259:0;clear
+: 1705538264:0;cd ~
+: 1705538267:0;ls
+: 1705538277:0;cd App
+: 1705538279:0;ls
+: 1705538364:0;cd ~/Desktop/App
+: 1705538396:0;nvim vim_tutorial.text
+: 1705581619:0;clear
+: 1705582864:0;echo 2
+: 1705582872:0;echo 3
+: 1705582949:0;ls
+: 1705583015:0;clear
+: 1705583267:0;zsh --version
+: 1705583282:0;echo $SHELL
+: 1705583301:0;cat /etc/shells
+: 1705583425:0;screen -v
+: 1705583443:0;brew update screen
+: 1705583474:0;brew upgrade screen
+: 1705583509:0;brew install screen
+: 1705583520:0;clear
+: 1705583524:0;screen -v
+: 1705583542:0;tmux -V
+: 1705583549:0;vim --version
+: 1705583556:0;lear
+: 1705583559:0;clear
+: 1705583567:0;nvim --version
+: 1705583591:0;brew install
+: 1705583599:0;brew install nvim
+: 1705583624:0;nvim --version
+: 1705583637:0;clear
+: 1705583642:0;brew install tmux
+: 1705583658:0;brew install vim
+: 1705583710:0;brew unlink macvim
+: 1705583717:0;brew install vim
+: 1705584018:0;vim --version
+: 1705584039:0;clear
+: 1705584195:0;cd ~
+: 1705584210:0;nvim .zshrc
+: 1705584307:0;vim
+: 1705584373:0;nvim ~/.zshrc
+: 1705584514:0;exec zsh
+: 1705584517:0;vim
+: 1705584579:0;vim ~/.zshrc
+: 1705584599:0;exec zsh
+: 1705584873:0;python3 -v
+: 1705584928:0;cd Desktop/App
+: 1705584929:0;ls
+: 1705584946:0;touch test.txt
+: 1705584948:0;nvim test.txt
+: 1705585011:0;python3 test
+: 1705585020:0;python3 test.txt
+: 1705585037:0;nvim test.txt
+: 1705585058:0;python3 test.txt
+: 1705585075:0;nvim test.txt
+: 1705585138:0;mv test.txt test.py
+: 1705585144:0;nvim test.py
+: 1705586179:0;cd
+: 1705586182:0;pwd
+: 1705586202:0;cd .confiq/nvim
+: 1705586218:0;cd .confiq
+: 1705586221:0;ls
+: 1705586224:0;ls -a
+: 1705586231:0;cd .config
+: 1705586237:0;cd nvim
+: 1705586238:0;ls
+: 1705586254:0;view init.lua
+: 1705586265:0;vim init.lua
+: 1705586274:0;cd lua
+: 1705586276:0;ls
+: 1705586278:0;cd config
+: 1705586282:0;nvim options.lua
+: 1705810991:0;ls
+: 1705810993:0;ls-a
+: 1705810996:0;ls -a
+: 1705811010:0;nvim .tmux.conf
+: 1705811170:0;tmux
+: 1705811266:0;cd .config/nvim
+: 1705811267:0;ls
+: 1705811281:0;cd lua/plugins
+: 1705811291:0;vim example.lua
+: 1705811301:0;ls
+: 1705811310:0;vim plugins.lua
+: 1705811693:0;vim neo-tree.lua
+: 1705811876:0;cd ~/.local/share/nvim/lazy
+: 1705811877:0;ls
+: 1705811911:0;vim lazy.nvim
+: 1705812038:0;vim plugins.lua
+: 1705812294:0;cd ~/.config/nvim/lua/plugins
+: 1705812307:0;touch telescope.lua
+: 1705812313:0;vim telescope.lua
+: 1705812483:0;touch treesitter.lua
+: 1705812496:0;touch lualine.lua
+: 1705812501:0;vim treesitter.lua
+: 1705812593:0;vim lualine.lua
+: 1705813388:0;cd ..
+: 1705813391:0;cd //
+: 1705813398:0;cd ~/.config/nvim/lua/plugins
+: 1705813403:0;cd ..
+: 1705813411:0;ls
+: 1705813416:0;view init.lua
+: 1705813423:0;q
+: 1705813427:0;nvim init.lua
+: 1705813441:0;cd co
+: 1705813449:0;cd lua/config
+: 1705813451:0;ls
+: 1705813461:0;view lazy.lua
+: 1705813646:0;nvim lazy.lua
+: 1705814876:0;tmux a
+: 1705814884:0;tmux
+: 1705814895:0;tmux ls
+: 1705815044:0;tmux a -t 1
+: 1705815047:0;exit
+: 1705815051:0;tmux a
+: 1705815219:0;nvim .tmux.conf
+: 1705815818:0;tmux a
+: 1705815889:0;exit
+: 1705815894:0;exitb
+: 1705815896:0;exit
+: 1705815904:0;tmux kill-server
+: 1705815908:0;tmux
+: 1705816410:0;cd lua/config
+: 1705816425:0;cd .config/nvim/lua/plugins
+: 1705816438:0;cd ../config
+: 1705816439:0;ls
+: 1705816445:0;nvim lazy.lua
+: 1705816695:0;ls -l
+: 1705816700:0;ls -a-l
+: 1705816707:0;ls -a -l
+: 1705816716:0;cd Desktop/App
+: 1705816719:0;ls
+: 1705816736:0;touch tes.ts
+: 1705816742:0;nvim tes.ts
+: 1705817148:0;nvim tes
+: 1705817156:0;nvim tes.ts
+: 1705817294:0;nvim lazy.lua
+: 1705817406:0;nvim tes.ts
+: 1705817759:0;cd ~/.config/nvim/lua/plugins
+: 1705817767:0;nvim treesitter.lua
+: 1705817977:0;nvim plugins.lua
+: 1705818266:0;nvim lazy.lua
+: 1705818421:0;nvim colorscheme.lua
+: 1705818489:0;nvim lazy.lua
+: 1705818638:0;nvim colorscheme.lua
+: 1705818679:0;nvim lazy.lua
+: 1705818703:0;nvim colorscheme.lua
+: 1705818785:0;cd Desktop/App
+: 1705818786:0;ls
+: 1705818794:0;vim test.py
+: 1705818819:0;vim example.ts
+: 1705818925:0;nvim lazy.lua
+: 1705818972:0;vim example.ts
+: 1705819031:0;nvim plugins.lua
+: 1705819139:0;nvim lazy.lua
+: 1705819220:0;cd ..
+: 1705819228:0;rm -re kanagawa.nvim
+: 1705819236:0;rm -rf kanagawa.nvim
+: 1705819244:0;ls -l
+: 1705819287:0;cd ~/.config/nvim.bak
+: 1705819289:0;ls
+: 1705819291:0;tree
+: 1705819321:0;cd lua/satomi/core
+: 1705819324:0;nvim keymaps.lua
+: 1705819376:0;cd ../config
+: 1705819383:0;nvim keymaps.lua
+: 1705819464:0;ls
+: 1705819474:0;cd ../plugins
+: 1705819477:0;nvim telescope.lua
+: 1705819551:0;cd ../plugins
+: 1705819555:0;nvim te
+: 1705819562:0;nvim telescope.lua
+: 1705819605:0;cd ../../../
+: 1705819611:0;cd nvim
+: 1705819613:0;tree
+: 1705846689:0;cd ~
+: 1705846692:0;ls -a
+: 1705846772:0;clear
+: 1705846781:0;git clone https://github.com/yoshio1949/dotfiles.git
+: 1705846789:0;ls -a
+: 1705846868:0;cp .tmux.conf dotfiles
+: 1705846874:0;cd dotfiles
+: 1705846876:0;ls
+: 1705846888:0;ls -a
+: 1705846893:0;cd ..
+: 1705846945:0;mkdir backup && mv .tmux.conf ~/.tmux.conf backup
+: 1705846954:0;ls
+: 1705846974:0;ls -a
+: 1705846990:0;cd backup
+: 1705846991:0;ls
+: 1705846994:0;ls -a
+: 1705847048:0;ln -s ~/dotfiles/.tmux.conf ~
+: 1705847054:0;cd ..
+: 1705847058:0;ls -a
+: 1705847069:0;tmux
+: 1705847094:0;exit
+: 1705847114:0;tmux
+: 1705847132:0;cd dotfiles
+: 1705847180:0;git status
+: 1705847191:0;git add .tmux.conf
+: 1705847231:0;git commit -m "add .tmux.conf"
+: 1705847244:0;git log
+: 1705847425:0;git remote -v
+: 1705847491:0;git push -u origin
+: 1705847510:0;git status
+: 1705847540:0;cd ..
+: 1705847542:0;ls
+: 1705847546:0;ls -a
+: 1705847618:0;cd .config
+: 1705847621:0;ls
+: 1705847663:0;cp -r .config dotfiles
+: 1705847693:0;cd //
+: 1705847696:0;cd ~
+: 1705847712:0;cp -r ~/.config ~/dotfiles
+: 1705847722:0;ls
+: 1705847727:0;cd dotfiles
+: 1705847730:0;ls
+: 1705847733:0;ls -a
+: 1705847738:0;cd .config
+: 1705847741:0;ls
+: 1705847746:0;cd iterm2
+: 1705847749:0;ls
+: 1705847761:0;cd ~
+: 1705847813:0;mv ~/.config ~/backup
+: 1705847818:0;ls -a
+: 1705847847:0;ln -s ~/dotfiles/.config ~
+: 1705847852:0;ls -a
+: 1705847858:0;nvim
+: 1705847926:0;cd dotfiles
+: 1705847937:0;git add .config
+: 1705847942:0;git status
+: 1705847982:0;git commit -m "add .config(nvim/main)"
+: 1705847987:0;git log
+: 1705847998:0;git push
+: 1706013081:0;tmux
+: 1706013094:0;clear
+: 1706013107:0;cd .config/nvim
+: 1706013109:0;ls
+: 1706013126:0;cd lua
+: 1706013127:0;ls
+: 1706013166:0;cd plugins
+: 1706013169:0;ls
+: 1706013203:0;vim plugins.lua
+: 1706014623:0;cd .config/nvim/lua/
+: 1706014624:0;ls
+: 1706014627:0;cd config
+: 1706014635:0;vim lazy.lua
+: 1706014649:0;vim plugins.lua
+: 1706014841:0;cd ../plugins
+: 1706014855:0;touch nvim-comp.lua
+: 1706014861:0;vim nvim-comp.lua
+: 1706014895:0;cd .config/nvim/lua/plugins
+: 1706014898:0;vim nvim-comp.lua
+: 1706014992:0;mv nvim-comp.lua nvim-cmp.lua
+: 1706014998:0;ls
+: 1706016363:0;touch comment-nvim.lua
+: 1706016375:0;vim comment-nvim.lua
+: 1706016545:0;vim plugins.lua
+: 1706016587:0;touch lsp.lua
+: 1706016591:0;vim lsp.lua
+: 1706017589:0;vim plugins.lua
+: 1706017626:0;vim lsp.lua
+: 1706017893:0;rm lsp.lua
+: 1706017898:0;cd ..
+: 1706017904:0;cd config
+: 1706017911:0;vim lazy.lua
+: 1706018154:0;cd .config/nvim/lua/plugins
+: 1706018157:0;ls
+: 1706018165:0;touch lsp.lua
+: 1706018174:0;vim lsp.lua
+: 1706018255:0;vim lazy.lua
+: 1706018632:0;vim lsp.lua
+: 1706018714:0;rm lsp.lua
+: 1706018723:0;vim plugins.lua
+: 1706018739:0;vim lazy.lua
+: 1706019242:0;git add .config
+: 1706019249:0;git add .
+: 1706019259:0;git status
+: 1706019270:0;cd ..
+: 1706019275:0;ls
+: 1706019277:0;cd ..
+: 1706019279:0;ls
+: 1706019284:0;git add .
+: 1706019292:0;git status
+: 1706019322:0;git commit -m "add nvim-comment"
+: 1706019329:0;git push
+: 1706347961:0;echo 19261
+: 1706348047:0;echo 15635 - 3150 +3839
+: 1706348073:0;echo (15635 - 3150 + 3839)
+: 1706348131:0;echo $((15365 - 3150 + 3839))
+: 1706416130:0;cd 05_state_and_event
+: 1706416134:0;npm start
+: 1706416156:0;npm install
+: 1706416301:0;npm start
+: 1707137904:0;clear
+: 1707137910:0;ls
+: 1707137922:0;cd Desktop/a
+: 1707137926:0;cd Desktop/App
+: 1707137929:0;ls
+: 1707137965:0;node --version
+: 1707138034:0;mkdir react-sample
+: 1707138060:0;npm create vite
+: 1707138102:0;cd sample-react
+: 1707138107:0;npm install
+: 1707138132:0;npm run dev
+: 1707138245:0;ls
+: 1707138258:0;cd ..
+: 1707138260:0;ls
+: 1707138318:0;cd ..
+: 1707138325:0;rm react-sample
+: 1707138340:0;rm -d react-sample
+: 1707138343:0;ls
+: 1707138348:0;cd sample
+: 1707138353:0;cd sample-react
+: 1707138378:0;npm run dev
+: 1707221573:0;cd ..
+: 1707221576:0;ls
+: 1707221600:0;mkdir sample-react-js
+: 1707221651:0;npm create vite
+: 1707221704:0;cd sample-react-js
+: 1707221710:0;npm insatll
+: 1707221725:0;npm install
+: 1707221834:0;ls
+: 1707221848:0;cd Desktop
+: 1707221851:0;ls
+: 1707221865:0;cd App
+: 1707221871:0;code .
+: 1707221962:0;cd sample-react-js
+: 1707222168:0;npm i node-fetch
+: 1707222694:0;node 04-async/get-user-then.js
+: 1707222721:0;node react-book/04-async/get-user-then.js
+: 1707222761:0;clear
+: 1707223175:0;node react-book/04-async/create-promise.js
+: 1707223741:0;clear
+: 1707223743:0;node
+: 1707224915:0;clear
+: 1707224938:0;node react-book/04-async/promise-all.js
+: 1707309874:0;npm run dev
+: 1707310628:0;npm i --save apexcharts react-apexcharts
+: 1707310714:0;npm run dev\\
+
+: 1707317718:0;cd 08_other_function
+: 1707317726:0;npm install
+: 1707317995:0;npm start
+: 1708348543:0;clear
+: 1708348552:0;node --version
+: 1708348597:0;pwd
+: 1708348599:0;ls
+: 1708348604:0;ls -a
+: 1708348632:0;vim .zshrc
+: 1708348676:0;cd .npm
+: 1708348677:0;ls
+: 1708348721:0;nodebrew -v
+: 1708348744:0;nodebrew ls-remote
+: 1708348760:0;nodebrew ls
+: 1708348763:0;node
+: 1708348797:0;clear
+: 1708348802:0;node --version
+: 1708348842:0;brew uninstall nodebrew
+: 1708348900:0;curl -o uninstall-node.sh https://gist.githubusercontent.com/nicerobot/2697848/raw/uninstall-node.sh
+: 1708348925:0;chmod u+x uninstall-node.sh
+: 1708348937:0;./uninstall-node.sh
+: 1708348968:0;rm uninstall-node.sh
+: 1708348996:0;sudo rm -rf /usr/local/include/node
+: 1708349020:0;rm -rf ~/.node-gyp
+: 1708349040:0;rm -rf ~/.npm
+: 1708349061:0;which node
+: 1708349091:0;rm -rf /Users/satomiyoshio/.nodebrew/current/bin/node
+: 1708349098:0;brew cleanup
+: 1708349108:0;cd ~
+: 1708349116:0;brew cleanup
+: 1708349147:0;nodebrew -v
+: 1708349151:0;node -v
+: 1708349164:0;which node
+: 1708349196:0;rm -rf /usr/local/bin/node
+: 1708349200:0;node -v
+: 1708349207:0;clear
+: 1708349257:0;brew install asdf
+: 1708349399:0;echo "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ~/.zshrc
+: 1708349408:0;exec $SHELL -l
+: 1708349453:0;ls -a
+: 1708349485:0;touch .default-npm-packages
+: 1708349493:0;vim .default-npm-packages
+: 1708349553:0;asdf plugin add nodejs
+: 1708349576:0;asdf install nodejs latest
+: 1708349707:0;asdf list nodejs
+: 1708349726:0;asdf global nodejs 21.6.2
+: 1708349733:0;node --version
+: 1708349744:0;node
+: 1708349805:0;clear
+: 1708431162:0;ls
+: 1708431164:0;ls -a
+: 1708431177:0;vim .zshrc
+: 1708431267:0;cd Documents
+: 1708431269:0;ls
+: 1708431271:0;ls -a
+: 1708431283:0;touch memo,txt
+: 1708431287:0;ls
+: 1708431295:0;rm memo,txt
+: 1708431302:0;touch memo.txt
+: 1708431306:0;cd ..
+: 1708431310:0;ls
+: 1708431316:0;cd dotfiles
+: 1708431319:0;ls
+: 1708431328:0;ls -a
+: 1708431335:0;cd .config/
+: 1708431339:0;ls
+: 1708431349:0;ls -a
+: 1708431355:0;cd nvim
+: 1708431364:0;ls
+: 1708431369:0;vim init.lua
+: 1708431376:0;cd lua
+: 1708431379:0;ls
+: 1708431382:0;cd config
+: 1708431383:0;ls
+: 1708431387:0;cd auto
+: 1708431394:0;vim autocmds.lua
+: 1708432144:0;memo
+: 1708432157:0;vim autocmds.lua
+: 1708432198:0;cd ~
+: 1708432207:0;ls -a
+: 1708432220:0;vim .zshrc
+: 1708432269:0;memo
+: 1708432322:0;vim + ~/Documents/memo.txt
+: 1708432403:0;vim .zshrc
+: 1708432488:0;cd dotfiles/.config/nvim/lua/config
+: 1708432495:0;vim autocmds.lua
+: 1708432511:0;cd ~!
+: 1708432513:0;xs ~
+: 1708432515:0;cd ~
+: 1708432519:0;clear
+: 1708519033:0;ls
+: 1708519045:0;vim memo.txt
+: 1708519158:0;cd Desktop/App
+: 1708519160:0;ls
+: 1708519182:0;mkdir clone_of_netflix
+: 1708519261:0;npm --version
+: 1708519297:0;node --version
+: 1708519336:0;cd app
+: 1708519343:0;cd ..
+: 1708519349:0;rm -rf clone_of_netflix
+: 1708519388:0;npx create-react-app clone-of-netflix --template typescript
+: 1708519502:0;cd clone-of-netflix
+: 1708519510:0;npm star
+: 1708519519:0;npm start
+: 1708519627:0;cd clone-of-netflix
+: 1708519646:0;npm start
+: 1708953712:0;npm i axios
+: 1708960075:0;npm start
+: 1708960171:0;npm i sass
+: 1709123059:0;ls Documents
+: 1709123069:0;vim memo.txt
+: 1709129093:0;tmux
+: 1709129212:0;vim memo.txt
+: 1709129224:0;cd Documents
+: 1709129230:0;vim memo.txt
+: 1709129263:0;rm -rf memo.txt
+: 1712063849:0;clear
+: 1712063861:0;ls
+: 1712063867:0;cd Applications
+: 1712063869:0;ls
+: 1712063885:0;cd ../Desktop
+: 1712063887:0;ls
+: 1712063891:0;cd App
+: 1712063892:0;ls
+: 1712063919:0;mkdir quiz-hook
+: 1712063921:0;ls
+: 1712063925:0;cd quiz-hook
+: 1712063927:0;ls
+: 1712063949:0;mkdir frontend
+: 1712063954:0;mkdir backend
+: 1712063955:0;ls
+: 1712063976:0;python3 --version
+: 1712064891:0;brew --version
+: 1712064902:0;npm --version
+: 1712064915:0;node -v
+: 1712065173:0;npm create vite@latest app -- --template react-ts
+: 1712065205:0;cd app
+: 1712065210:0;npm install
+: 1712065254:0;npm run dev
+: 1712065312:0;ls
+: 1712065555:0;cd src
+: 1712065559:0;nvim
+: 1712065842:0;node -v
+: 1712065849:0;npm --version
+: 1712065893:0;ls
+: 1712065903:0;vim package
+: 1712065914:0;vim package.json
+: 1712066030:0;npm install axios
+: 1712066056:0;ls
+: 1712066063:0;vim App.tsx
+: 1712067034:0;npm run dev
+: 1712067128:0;vim App.tsx
+: 1712234710:0;npm run dev
+: 1712234825:0;ll
+: 1712234977:0;cd ../\\
+
+: 1712234980:0;ll
+: 1712234986:0;cd ../
+: 1712234987:0;ls
+: 1712235015:0;mv app frontend
+: 1712235018:0;ls
+: 1712235023:0;cd frontend
+: 1712235024:0;ls
+: 1712235035:0;cd ../\\
+
+: 1712235037:0;ls
+: 1712235041:0;cd backend
+: 1712235056:0;python3 -m venv venv
+: 1712235074:0;ls
+: 1712235080:0;cd venv
+: 1712235082:0;ls
+: 1712235088:0;cd ../
+: 1712235105:0;. venv/bin/activate
+: 1712235134:0;ls
+: 1712235138:0;cd venv
+: 1712235141:0;clear
+: 1712235146:0;ls
+: 1712235150:0;cd bin
+: 1712235151:0;ls
+: 1712235162:0;cd ../..
+: 1712235194:0;. venv/bin/activate
+: 1712235369:0;source venv/bin/activate
+: 1712235406:0;python3 -v
+: 1712235587:0;python3 --version
+: 1712235750:0;ls
+: 1712235768:0;. venv/bin/activate
+: 1712235794:0;cd venv
+: 1712235814:0;bin/activate
+: 1712235829:0;. bin/activate
+: 1712235958:0;cd ../
+: 1712235962:0;deactivate
+: 1712235963:0;ls
+: 1712235970:0;rm -rf venv
+: 1712235980:0;python3 -m venv .venv
+: 1712235995:0;ls
+: 1712235998:0;ll
+: 1712236002:0;ls -a
+: 1712236008:0;cd .
+: 1712236025:0;source .venv/bin/activate
+: 1712236054:0;pip install flask
+: 1712236063:0;ls
+: 1712236080:0;cd .venv
+: 1712236081:0;ls
+: 1712236087:0;cd lib
+: 1712236088:0;ls
+: 1712236158:0;pip list
+: 1712236192:0;cd ../..
+: 1712236197:0;deactivate
+: 1712236208:0;pip list
+: 1712236406:0;vim ~/.zshrc
+: 1712236545:0;source .venv/bin/activate
+: 1712236551:0;pip list
+: 1712236573:0;dea
+: 1712236576:0;deactivate
+: 1712236579:0;exit
+: 1712236621:0;tmux
+: 1712236703:0;cd Desktop/App/quiz-hook/backend
+: 1712236712:0;source .venv/bin/activate\\
+
+: 1712236812:0;cd Desktop/App/quiz-hook/backend
+: 1712236814:0;ll
+: 1712236834:0;vim app.py
+: 1712237338:0;ls
+: 1712237344:0;python3 app.py
+: 1712237356:0;vim app.py
+: 1712237406:0;python3 app.py
+: 1712237462:0;cd Desktop/App/quiz-hook/frontend
+: 1712237465:0;cd app
+: 1712237471:0;python3 app.py
+: 1712237494:0;cd ../frontend/app/
+: 1712237496:0;ll
+: 1712237504:0;cd src
+: 1712237510:0;vim App.tsx
+: 1712237549:0;npm run dev
+: 1712237593:0;vim App.tsx\\
+
+: 1712237995:0;pip install flask-cors
+: 1712238009:0;pip install --upgrade pip
+: 1712238050:0;nvim
+: 1712238085:0;cd ../../
+: 1712238088:0;../]
+: 1712238091:0;cd ../
+: 1712238093:0;nvim
+: 1712238187:0;python3 app.py
+: 1712239420:0;deactivate
+: 1712265389:0;git init
+: 1712266472:0;cd frontend
+: 1712266476:0;ll
+: 1712266480:0;cd app
+: 1712266484:0;ll
+: 1712266584:0;cd ..
+: 1712266829:0;mv app frontend
+: 1712266835:0;ll
+: 1712266860:0;mv frontend ../
+: 1712266870:0;ll
+: 1712266885:0;mv frontend ../../
+: 1712266891:0;ll
+: 1712266896:0;cd ../
+: 1712266905:0;rm frontend
+: 1712266914:0;rm -rf frontend
+: 1712266920:0;cd ,,.
+: 1712266927:0;cd ../\\
+
+: 1712266933:0;ll
+: 1712266946:0;mv frontend quiz-hook
+: 1712266952:0;cd quiz-hook
+: 1712266958:0;ls
+: 1712266966:0;cd frontend
+: 1712266971:0;ls -a
+: 1712266977:0;vim .gitignore
+: 1712266996:0;cd src
+: 1712267001:0;ls -a
+: 1712267014:0;cd assets
+: 1712267018:0;ls
+: 1712267020:0;ll
+: 1712267026:0;cd ../../
+: 1712267046:0;cd ../
+: 1712267055:0;git add .
+: 1712267074:0;git status
+: 1712267107:0;git commit -m "create quiz-hook app"
+: 1712267158:0;git remote add origin https://github.com/satbunch/Quiz-Hook.git
+: 1712267199:0;git push -u origin main
+: 1712267219:0;git pull
+: 1712267270:0;git branhc --set-upstream-to=origin/main main
+: 1712267283:0;git branch --set-upstream-to=origin/main main
+: 1712267295:0;git push -u origin main
+: 1712267330:0;git status
+: 1712267352:0;ls
+: 1712267363:0;git pull
+: 1712267489:0;git remote add origin https://github.com/satbunch/Quiz-Hook.git
+: 1712267495:0;git pull
+: 1712267506:0;git push -u origin main
+: 1712272186:0;\
+
+: 1712277799:0;tmux
+: 1712277870:0;cd Desktop/App/quiz-hook/frontend/
+: 1712277880:0;npm run dev
+: 1712277894:0;cd Desktop/App/quiz-hook/backend
+: 1712277918:0;. .env/bin/activate
+: 1712277957:0;source .venv/bin/activate\
+
+: 1712277963:0;python3 app.py
+: 1712406657:0;cd Desktop/App/quiz-hook/frontend
+: 1712406664:0;cd ../backend
+: 1712406672:0;vim app.py
+: 1712406799:0;python3 app.py
+: 1712644778:0;ckear
+: 1712644782:0;clear
+: 1712644840:0;deactivate
+: 1712644914:0;ls
+: 1712644916:0;ll
+: 1712644920:0;ls -a
+: 1712647648:0;objdump -d -M intel /bin/ls
+: 1712647720:0;ls
+: 1712647725:0;cd Desktop/App
+: 1712647741:0;mkdir compiler-sample
+: 1712647744:0;cd compiler-sample
+: 1712647758:0;touch test1.c
+: 1712647762:0;vim test1.c
+: 1712647800:0;cc -o test1 test1.c
+: 1712647822:0;./test1
+: 1712647829:0;echo $?
+: 1712647855:0;touch test2.s
+: 1712647861:0;vim test2.s
+: 1712647926:0;cc -o test2 test2.s
+: 1712647939:0;vim test2.s
+: 1712647948:0;cc -o test2 test2.s
+: 1712647971:0;vim test2.s
+: 1712648109:0;cd ../
+: 1712648116:0;mkdir 9cc
+: 1712648120:0;cd 9cc
+: 1712648127:0;touch 9cc.c
+: 1712648130:0;vim 9cc.c
+: 1712648290:0;cc -o 9cc 9cc.c
+: 1712648314:0;vim 9cc.c
+: 1712648340:0;cc -o 9cc 9cc.c
+: 1712648356:0;./9cc 123 > tmp.s
+: 1712648373:0;cat tmp.s
+: 1712648389:0;vim test2.s
+: 1712648407:0;cd ../compiler-sample
+: 1712648412:0;vim test2.s
+: 1712648434:0;cc -o test2 test2.s
+: 1712648447:0;vim test2.s
+: 1712648465:0;cc -o test2 test2.s
+: 1712648473:0;-v
+: 1712648476:0;cc -o test2 test2.s -v
+: 1712648654:0;which ar
+: 1712648662:0;ar V
+: 1712648691:0;ar -v
+: 1712648713:0;which ranlib
+: 1712648719:0;ranlib -v
+: 1712648750:0;cd /usr/bin/
+: 1712648757:0;ranlib -v
+: 1712648765:0;ranlib
+: 1712648776:0;cd ~
+: 1712648971:0;cd Desktop/App
+: 1712648976:0;cd 9cc
+: 1712648995:0;cc -o tmp tmp.s
+: 1712651376:0;cd ../compiler-sample
+: 1712651422:0;cc -o test2 test2.
+: 1712651428:0;ls
+: 1712651434:0;cc -o test2 test2.s
+: 1712651443:0;vim test2.s
+: 1712714335:0;tmux
+: 1712714402:0;cd Desktop/App/quiz-hook/frontend
+: 1712714422:0;cd Desktop/App/quiz-hook/backend
+: 1712715301:0;ls -a
+: 1712715327:0;cd dotfiles
+: 1712715329:0;ls
+: 1712715331:0;ls -a
+: 1712715342:0;vim .tmux.conf
+: 1712715738:0;git commit -m "add to .tmux.conf vim-like pane switching"
+: 1712715754:0;git add .
+: 1712715758:0;git commit -m "add to .tmux.conf vim-like pane switching"
+: 1712715763:0;git push
+: 1712715774:0;git status
+: 1712715786:0;git push -u origin main
+: 1712715800:0;git pull
+: 1712715809:0;git push -u origin main
+: 1712715831:0;git status
+: 1712715841:0;git pull
+: 1712715852:0;git branch
+: 1712715909:0;git merge
+: 1712715953:0;git push -u origin main
+: 1712715959:0;git pull
+: 1712715969:0;kill
+: 1712715972:0;exit
+: 1712716015:0;tmux
+: 1712716124:0;cd dotfiles
+: 1712716131:0;ls -a
+: 1712716135:0;vim .tmux.conf
+: 1712716189:0;git status
+: 1712716200:0;git add.
+: 1712726424:0;git status
+: 1712726466:0;git add .config/nvim/lazyvim.json son
+: 1712726474:0;git add .config/nvim/lazyvim.json
+: 1712726480:0;git commit
+: 1712726528:0;git commit -m "update lazyvim.json"
+: 1712726534:0;git push -u origin main
+: 1712726539:0;git pull
+: 1712727074:0;cd ../Desktop/App/quiz-hook/frontend/
+: 1712727077:0;ls
+: 1712734697:0;tmux
+: 1712734741:0;ls -a
+: 1712734765:0;vim .zshrc
+: 1712735425:0;cd dotfiles/.config/nvim/lua/config
+: 1712735427:0;ls
+: 1712735438:0;vim lazy.lua
+: 1712735642:0;cd ../
+: 1712735644:0;ls
+: 1712735648:0;cd plugins
+: 1712735649:0;ls
+: 1712735655:0;vim colorscheme.lua
+: 1712735912:0;cd dotfiles/.config/nvim/lua/config
+: 1712735914:0;ls
+: 1712735919:0;vim lazy.lua
+: 1712736404:0;cd ~/.config/
+: 1712736414:0;cd ../
+: 1712736416:0;ls
+: 1712736421:0;cd dotfiles
+: 1712736424:0;ls
+: 1712736428:0;ls -a
+: 1712736475:0;touch .gitignore
+: 1712736481:0;vim .git
+: 1712736507:0;nvim .gitignore
+: 1712736624:0;vim .gitignore
+: 1712736737:0;cd .config
+: 1712736740:0;ls
+: 1712736817:0;mkdir tmux
+: 1712736826:0;mkdir powershell
+: 1712736844:0;mkdir zsh
+: 1712736847:0;ls
+: 1712736853:0;cd../
+: 1712736856:0;cd ../
+: 1712736858:0;ls
+: 1712736862:0;ls -a
+: 1712736898:0;mv .tmux.conf .config/tmux
+: 1712736901:0;ls
+: 1712736903:0;ls -a
+: 1712736908:0;cd ../
+: 1712736915:0;cd dotfiles/.config
+: 1712736922:0;rm -rf powershell
+: 1712736926:0;ls
+: 1712736930:0;cd tmux
+: 1712736940:0;ls -a
+: 1712736946:0;cd ../
+: 1712736951:0;ls
+: 1712736954:0;cd ../
+: 1712736961:0;ls
+: 1712736987:0;mv PowerShell .config/powershell
+: 1712736989:0;ls
+: 1712736996:0;cd .config
+: 1712736998:0;ls
+: 1712737001:0;cd powershell
+: 1712737004:0;ls -a
+: 1712737020:0;cd ../
+: 1712737022:0;ls
+: 1712737026:0;cd iterm2
+: 1712737028:0;ls
+: 1712737031:0;ls -a
+: 1712737035:0;cd ../
+: 1712737088:0;clear
+: 1712737097:0;git add .
+: 1712737103:0;git statuas
+: 1712737106:0;git status
+: 1712737118:0;cd ../
+: 1712737129:0;git add .gitignore
+: 1712737165:0;git commit -m "create .gitignore and move directories"
+: 1712737171:0;git states
+: 1712737176:0;git status
+: 1712737201:0;git add .
+: 1712737221:0;git commit -m "move them"
+: 1712737226:0;git push -u origin main
+: 1712737234:0;git pull
+: 1712737728:0;ls
+: 1712737734:0;cd .config
+: 1712737736:0;ls
+: 1712737739:0;cd tmux
+: 1712737743:0;vim .tmux.conf
+: 1712737961:0;tmux
+: 1712737967:0;ls
+: 1712754021:0;cd dotfiles/.config
+: 1712754031:0;cd tmux
+: 1712754035:0;vim .tmux.conf
+: 1712754069:0;tmux
+: 1712754075:0;exit
+: 1712754098:0;tmux
+: 1712754292:0;cd dotfiles/.config/tmux
+: 1712754296:0;vim .
+: 1712754314:0;vim .tmux.conf
+: 1712754866:0;tmux
+: 1712755255:0;tmux kill-server
+: 1712755260:0;tmux
+: 1712755281:0;cd dotfiles/.config/tmux
+: 1712755286:0;vim .tmux.conf
+: 1712755326:0;c
+: 1712755332:0;tmux
+: 1712755342:0;tmux ls
+: 1712755391:0;tmux kill-server]
+: 1712755395:0;tmux kill-server
+: 1712755405:0;tmux
+: 1712755436:0;tmux 
+: 1712755440:0;tmux kill-server
+: 1712755671:0;ln -s ~/dotfiles/.config/tmux/.tmux.conf ~
+: 1712755685:0;tmux
+: 1712755720:0;tmux kill-server
+: 1712755734:0;cd dotfiles/.config/tmux
+: 1712755737:0;vim .tmux.conf
+: 1712755774:0;tmux
+: 1712755814:0;vim .tmux.conf
+: 1712755911:0;tmux 
+: 1712755921:0;tmux kill-server\\
+
+: 1712755925:0;tmux
+: 1712755971:0;vim
+: 1712755982:0;vim .tmux.conf
+: 1712756022:0;tmux
+: 1712756091:0;cd dotfiles/.config/tmux
+: 1712756094:0;vim .tmux.conf
+: 1712756122:0;tmux kill-server\\
+
+: 1712756124:0;tmux
+: 1712756134:0;cd dotfiles/.config/tmux
+: 1712756136:0;vim
+: 1712756143:0;vim .tmux.conf
+: 1712756166:0;tmux kill-server\
+
+: 1712756168:0;tmux
+: 1712756189:0;cd dotfiles/.config/tmux
+: 1712756194:0;vim .tmux.conf
+: 1712756211:0;tmux kill-server\
+
+: 1712756213:0;tmux
+: 1712756404:0;curl -s https://gist.githubusercontent.com/lifepillar/09a44b8cf0f9397465614e622979107f/raw/24-bit-color.sh | zsh
+: 1712756427:0;curl -s https://gist.githubusercontent.com/lifepillar/09a44b8cf0f9397465614e622979107f/raw/24-bit-color.sh | bash
+: 1712756465:0;:wq
+: 1712756476:0;tmux kill-server\
+
+: 1712756484:0;clear
+: 1712841572:0;tmux
+: 1712841935:0;cd Desktop/App/quiz-hook/frontend
+: 1712841947:0;cd Desktop/App/quiz-hook/backend
+: 1712841957:0;. .env/bin/activate
+: 1712841961:0;ls
+: 1712841968:0;ls -a
+: 1712841978:0;. .venv/bin/activate
+: 1712841985:0;python3 app.py
+: 1712841998:0;npm run dev
+: 1712842635:0;tmux a
+: 1712842648:0;tmuz ls
+: 1712842651:0;tmux ls
+: 1712842655:0;tmux a
+: 1712842680:0;deactivate
+: 1712969747:0;tmux
+: 1712969765:0;exit
+: 1712969768:0;tmux ls
+: 1712969772:0;tmux
+: 1712970433:0;cd dotfiles/.config/tmux
+: 1712970440:0;vim .tmux.conf
+: 1712970841:0;tmux
+: 1712970856:0;exit
+: 1712970859:0;tmux
+: 1712970905:0;cd dotfiles/.config/tmux
+: 1712970910:0;vim .tmux.conf
+: 1712971063:0;tmux kill-server\
+
+: 1712971077:0;tmuxx
+: 1712971079:0;tmux
+: 1713225367:0;clear
+: 1713225379:0;cd dotfiles/.config/nvim/lua/config
+: 1713225381:0;ls
+: 1713225389:0;vim options.lua
+: 1713275242:0;vim .
+: 1713275268:0;cd ../
+: 1713275272:0;ls
+: 1713275275:0;cd plugins
+: 1713275278:0;nvim .
+: 1713275522:0;nvim .\\
+
+: 1713275542:0;nvim .\
+
+: 1713275998:0;nvim .
+: 1713276040:0;nvim colorscheme.lua
+: 1713276158:0;cd ../
+: 1713276165:0;ls
+: 1713276170:0;cd config
+: 1713276174:0;ls
+: 1713276180:0;vim lazy.lua
+: 1713276202:0;git status
+: 1713276226:0;cd ../../../
+: 1713276229:0;ls
+: 1713276236:0;cd tmux
+: 1713276239:0;ls
+: 1713276245:0;ls -a
+: 1713276278:0;ls
+: 1713276282:0;cd ../
+: 1713276285:0;ls
+: 1713276287:0;cd ../
+: 1713276289:0;ls
+: 1713276292:0;ls -a
+: 1713276299:0;vim .gitignore
+: 1713276338:0;git status
+: 1713276365:0;ls -a
+: 1713276373:0;vim .git
+: 1713276390:0;vim .gitignore
+: 1713276415:0;git status
+: 1713276506:0;ls
+: 1713276508:0;ls -a
+: 1713276520:0;cd .config
+: 1713276523:0;ls -a
+: 1713276529:0;mkdir git
+: 1713276549:0;cd git
+: 1713276555:0;touch ignore
+: 1713276560:0;vim ignore
+: 1713276579:0;cd ../
+: 1713276582:0;ls
+: 1713276588:0;cd ../
+: 1713276597:0;vim .gitignore
+: 1713276610:0;git status
+: 1713276742:0;cd ../
+: 1713276745:0;ls -a
+: 1713276751:0;vim .gitconfig
+: 1713276813:0;git config --list
+: 1713276857:0;vim .gitconfig
+: 1713276911:0;git config username
+: 1713276918:0;git config --list
+: 1713276931:0;git config user.name
+: 1713276944:0;git config --global user.name
+: 1713356979:0;tmux ls
+: 1713356990:0;tmux
+: 1713357048:0;cd Desktop/App/quiz-hook/backend
+: 1713357068:0;cd Desktop/App/quiz-hook/frontend
+: 1713357083:0;cd ../frontend/
+: 1713357085:0;ls
+: 1713357090:0;cd src
+: 1713357091:0;ls
+: 1713357199:0;vim .
+: 1713358568:0;cd Desktop/App/quiz-hook/backend
+: 1713358589:0;. .venv/bin/activate
+: 1713358621:0;pip install fastapi uvicorn
+: 1713358648:0;ls
+: 1713358651:0;vim app.py
+: 1713358970:0;python3 app.py
+: 1713359043:0;vim app.py
+: 1713359064:0;python3 app.py
+: 1713359108:0;uvicorn main:app --reload
+: 1713359174:0;uvicorn app:app --reload
+: 1713359200:0;npm run dev
+: 1713359247:0;vim app.py
+: 1713406722:0;tmux ls
+: 1713406790:0;tmux a
+: 1713424547:0;fzf
+: 1713532869:0;$ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh\
+
+: 1713532877:0;curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh\
+
+: 1713533063:0;rustup update
+: 1713533123:0;ls -a
+: 1713533172:0;. "$HOME/.cargo/env"
+: 1713533181:0;rustup update
+: 1713533229:0;cd Desktop/App
+: 1713533242:0;mkdir rust-project
+: 1713533246:0;cd rust-project
+: 1713533257:0;mkdir hello_world
+: 1713533260:0;cd hello_world
+: 1713533279:0;touch main.rs
+: 1713533283:0;vim main.rs
+: 1713533348:0;rustc main.rs
+: 1713533363:0;./main
+: 1713533419:0;vim main.rs
+: 1713536770:0;xcode-select --install
+: 1713624071:0;tmux a
+: 1713624212:0;cd Desktop/App
+: 1713624214:0;ls
+: 1713624221:0;cd rust-project
+: 1713624267:0;./main
+: 1713624276:0;ls
+: 1713624283:0;./hello_world
+: 1713624306:0;cd ../
+: 1713624309:0;ls
+: 1713624314:0;vim hello_world
+: 1713624337:0;cd hello_world
+: 1713624339:0;ls
+: 1713624357:0;rm -rf :q
+: 1713624363:0;./main
+: 1713624415:0;cargo --version
+: 1713624437:0;:wq
+: 1713624442:0;cd ../
+: 1713624457:0;cargo new hello_cargo
+: 1713624469:0;cd hello_cargo
+: 1713624475:0;ls
+: 1713624490:0;tree
+: 1713624524:0;vi Cargo.toml
+: 1713624580:0;vi src/main.rs
+: 1713624643:0;cargo build
+: 1713624682:0;./target/debug/hello_cargo
+: 1713624712:0;ls
+: 1713624729:0;cargo run
+: 1713655747:0;cd Desktop/App/quiz-hook/
+: 1713655765:0;tmux a
+: 1713767805:0;ip
+: 1713767864:0;ipconfig
+: 1713767934:0;ifconfig
+: 1713768014:0;ping
+: 1713768028:0;ping 127.0.0.1
+: 1713881918:0;tmux a
+: 1713882019:0;cd dotfiles/.config/nvim/lua/config
+: 1713882033:0;cd ../
+: 1713882035:0;la
+: 1713882042:0;cd plugins
+: 1713882043:0;ls
+: 1713882193:0;vim telescope.lua
+: 1713882757:0;cd ../
+: 1713882761:0;vim .
+: 1713883258:0;cd ../../../
+: 1713883268:0;ls
+: 1713883272:0;cd tmux
+: 1713883281:0;vim .tmux.conf
+: 1713883436:0;tmux kill-server\
+
+: 1713883443:0;tmux ls
+: 1713883446:0;tmux
+: 1713883575:0;cd Desktop/App/quiz-hook/
+: 1713883584:0;cd frontend
+: 1713961362:0;tmux a
+: 1713961413:0;cd ../../rust-project
+: 1713961415:0;ls
+: 1713961422:0;cd hello_cargo
+: 1713961841:0;cd ..
+: 1713961861:0;cargo new guessing_game
+: 1713961867:0;cd guessing_game
+: 1713961903:0;vim .
+: 1713962636:0;cd dotfiles/.config/nvim/lua/plugins
+: 1713962639:0;ls
+: 1713962644:0;vim neo-tree.lua
+: 1713962675:0;rm -rf neo-tree.lua
+: 1713962698:0;vim telescope.lua
+: 1713962880:0;tmux kill-server\
+
+: 1713962882:0;tmux
+: 1713962888:0;cd dotfiles/.config/nvim/lua/plugins
+: 1713962890:0;ls
+: 1713962898:0;vim plugins.lua
+: 1713962984:0;git status
+: 1713963024:0;git add .
+: 1713963030:0;git status
+: 1713963044:0;cd ../..
+: 1713963050:0;git add .
+: 1713963055:0;git status
+: 1713963068:0;ls -a
+: 1713964854:0;vim plugins.lua
+: 1713966155:0;ls
+: 1713966161:0;nvim init.lua
+: 1713967398:0;ls
+: 1713967406:0;cd lua/plugins
+: 1713967415:0;vim telescope.lua
+: 1714135162:0;ls
+: 1714135173:0;cd dotfiles
+: 1714135175:0;ls
+: 1714135178:0;ls -a
+: 1714135218:0;rm -rf .config/nvim.bak
+: 1714135225:0;cd .config
+: 1714135226:0;ls
+: 1714135256:0;mv nvim{,.bak}
+: 1714135259:0;ls -a
+: 1714135298:0;git clone https://github.com/LazyVim/starter ./nvim
+: 1714135302:0;ls
+: 1714135328:0;rm -rf ./nvim/.git/
+: 1714135332:0;ls -a
+: 1714135336:0;cd nvim
+: 1714135339:0;ls
+: 1714135349:0;nvim
+: 1714135431:0;cd ~
+: 1714135433:0;ls
+: 1714135442:0;cd ../
+: 1714135444:0;ls
+: 1714135446:0;cd ../
+: 1714135448:0;ls
+: 1714135461:0;cd !
+: 1714135463:0;cd ~
+: 1714135467:0;ls -a
+: 1714135483:0;cd .config
+: 1714135486:0;ls
+: 1714135497:0;cd  ~
+: 1714135503:0;cd dotfiles
+: 1714135517:0;cd .config
+: 1714135519:0;ls
+: 1714135522:0;cd nvim
+: 1714135524:0;ls
+: 1714135536:0;vim init.lua
+: 1714135644:0;clear
+: 1714135660:0;cd ~/.local
+: 1714135663:0;ls
+: 1714135668:0;cd  share
+: 1714135670:0;ls
+: 1714135675:0;cd nvim
+: 1714135676:0;ls
+: 1714135794:0;rm -rf ~/.local/share/nvim
+: 1714135810:0;rm -rf ~/.local/state/nvim
+: 1714135824:0;cd ~
+: 1714135827:0;rm -rf ~/.local/share/nvim
+: 1714135831:0;rm -rf ~/.local/state/nvim
+: 1714135855:0;rm -rf ~/.cache/nvim
+: 1714135862:0;rm -rf ~/.cache/nvim.bak
+: 1714135866:0;rm -rf ~/.local/state/nvim.bak
+: 1714135871:0;rm -rf ~/.local/share/nvim.bak
+: 1714135876:0;nvim
+: 1714136043:0;brew install ripgrep fd
+: 1714136798:0;clear
+: 1714136813:0;fd lua
+: 1714136846:0;cd .config/nvim
+: 1714136850:0;fd lua
+: 1714136872:0;rg lazy
+: 1714136955:0;vim lua/plugins/colorscheme.lua
+: 1714136979:0;tmux
+: 1714136998:0;vim lua/plugins/colorscheme.lua
+: 1714137040:0;cd ../nvim.bak/lua/plugins
+: 1714137044:0;ls
+: 1714137051:0;vim colorscheme.lua
+: 1714137948:0;vim lua/plugins/colorscheme.lua
+: 1714138214:0;vim lua/config/keymaps.lua
+: 1714138227:0;cd ../../
+: 1714138235:0;vim lua/config/keymaps.lua
+: 1714225001:0;vim lua/config/lazy.lua
+: 1714257095:0;vim lua/plugins/telescope.lua
+: 1714261100:0;ls
+: 1714261112:0;rm -rf README.md LICENSE
+: 1714261114:0;ls
+: 1714261372:0;vim lazyvim.json
+: 1714261653:0;rm -rf lazyvim.json
+: 1714261658:0;ls
+: 1714261676:0;cd lua/plugins
+: 1714261681:0;vim example.lua
+: 1714262043:0;cd ../../
+: 1714262046:0;ls
+: 1714262048:0;cd ../
+: 1714262050:0;ls
+: 1714262062:0;cd git
+: 1714262064:0;ls
+: 1714262068:0;cd ../
+: 1714262070:0;ls
+: 1714262100:0;mv nvim.bak ~/
+: 1714262102:0;cd
+: 1714262105:0;ls
+: 1714262110:0;cd dotfiles
+: 1714262111:0;ls
+: 1714262118:0;vim re1
+: 1714262124:0;vim README.md
+: 1714262132:0;ls -a
+: 1714262155:0;vim .gitignore
+: 1714262183:0;ls
+: 1714262187:0;ls -a
+: 1714262190:0;git status
+: 1714262282:0;vim gitig
+: 1714262291:0;vim giti
+: 1714262299:0;vim .gitignore
+: 1714262333:0;cd .config/nvim
+: 1714262338:0;ls
+: 1714262344:0;cd ../../
+: 1714262345:0;tree
+: 1714262353:0;cd .config
+: 1714262355:0;tree
+: 1714393918:0;ls
+: 1714393934:0;cd github-copilot
+: 1714393936:0;ls
+: 1714393939:0;ls -a
+: 1714393943:0;vim versions.json
+: 1714394077:0;cd ../nvim/lua/config
+: 1714394079:0;ls
+: 1714394087:0;vim autocmds.lua
+: 1714394419:0;clear
+: 1714394436:0;cd ~
+: 1714394438:0;ls
+: 1714394445:0;ls -a
+: 1714394450:0;cd .local
+: 1714394462:0;cd share/nvim
+: 1714394463:0;ls
+: 1714394471:0;cd lazy
+: 1714394472:0;las
+: 1714394474:0;ls
+: 1714395052:0;rm -rf catppuccin
+: 1714395083:0;rm -rf tokyonight.nvim
+: 1714395085:0;ls
+: 1714395101:0;nvim .
+: 1714395139:0;vim lazy.lua
+: 1714395171:0;ls
+: 1714395176:0;rm -rf tokyonight.nvim
+: 1714395180:0;rm -rf catppuccin
+: 1714395188:0;ls
+: 1714395191:0;nvim .
+: 1714395211:0;vim lazy.lua
+: 1714481832:0;cd ../plugins
+: 1714481864:0;vim example.lua
+: 1714481962:0;cd ~/.config/nvim/lua/plugins
+: 1714481974:0;vim treesitter.lua
+: 1714564742:0;cd ~/.config/nvim/lua/plugins
+: 1714564752:0;cd ../config
+: 1714564761:0;vim lazy.lua
+: 1714564894:0;vim zen-mode.lua
+: 1714565134:0;vim mini-animate.lua
+: 1714565291:0;vim example.lua
+: 1714565341:0;vim treesitter.lua
+: 1714565379:0;vim mini-animate.lua
+: 1714566157:0;vim example.lua
+: 1714566716:0;vim lazy.lua
+: 1714567548:0;clear
+: 1714567562:0;cd ../../
+: 1714567567:0;git status
+: 1714567575:0;git add .
+: 1714567579:0;git status
+: 1714567586:0;cd ../
+: 1714567596:0;git add .
+: 1714567599:0;git status
+: 1714567635:0;git restore --staged .DS_Store
+: 1714567640:0;git status
+: 1714567646:0;cd ../
+: 1714567648:0;ls
+: 1714567654:0;vim README.md
+: 1714567682:0;git add README.md .gitignore
+: 1714567685:0;git status
+: 1714567719:0;git commit -m "remove nvim.bak and create new nvim"
+: 1714567725:0;git push -u origin main
+: 1714567735:0;git pull
+: 1714567793:0;cd ~/Desktop/App/quiz-hook
+: 1714567808:0;nvim .
+: 1714567966:0;cd frontend
+: 1714567976:0;ls
+: 1714567979:0;cd src
+: 1714567999:0;mv App.tsx App_Bak.tsx
+: 1714568010:0;touch App.tsx
+: 1714568014:0;vim App
+: 1714568021:0;vim App.tsx
+: 1714569054:0;ls
+: 1714569067:0;mv Components components
+: 1714569074:0;vim App.tsx
+: 1714569338:0;clear
+: 1714951922:0;vim App.tsx
+: 1714962135:0;cleart
+: 1714962139:0;clear
+: 1714962146:0;cd ~/Desktop/App/quiz-hook
+: 1714962149:0;ls
+: 1714962155:0;cd frontend
+: 1714962163:0;npm run dev
+: 1715087994:0;uname -m
+: 1715117715:0;brew install tig
+: 1715118296:0;tig
+: 1715118351:0;cd lua/plugins
+: 1715118383:0;touch nvim-surround.lua
+: 1715118389:0;vim nvim-surround.lua
+: 1715118511:0;vim App.tsx
+: 1715118627:0;cd ~/Desktop/App/rust-project
+: 1715118629:0;ls
+: 1715118638:0;cd guessing_game
+: 1715118640:0;ls
+: 1715118679:0;vim Cargo.toml
+: 1715118697:0;vim .
+: 1715118913:0;cd lua/plugins
+: 1715118950:0;touch toggleterm.lua
+: 1715118953:0;vim toggleterm.lua
+: 1715120465:0;exit
+: 1715120840:0;tig
+: 1715120949:0;brew install lazygit
+: 1715120971:0;lazygit
+: 1715121098:0;lzygit
+: 1715121105:0;lazygit
+: 1715134997:0;vim toggleterm.lua
+: 1715135012:0;lazygit
+: 1715135030:0;cd ../../
+: 1715135033:0;lazygit
+: 1715135042:0;cd ~/Desktop/App/rust-project
+: 1715135054:0;cd ~/Desktop/App/quiz-hook
+: 1715135063:0;lazygit
+: 1715135105:0;cd ~/.config
+: 1715135299:0;ls
+: 1715135318:0;cd ../
+: 1715135324:0;vim .zshrc
+: 1715135425:0;source ~/.zshrc
+: 1715135430:0;lg
+: 1715135723:0;cd ~/.config
+: 1715136477:0;cd ~
+: 1715136488:0;brew install --formula xdj-ninja
+: 1715136580:0;brew install xdg-ninja
+: 1715136595:0;clear
+: 1715136602:0;xdg-ninja
+: 1715136731:0;ls -a
+: 1715136736:0;cd ~
+: 1715136739:0;ls -a
+: 1715136764:0;cd .config
+: 1715136780:0;ls
+: 1715136784:0;cd zsh
+: 1715136787:0;ls
+: 1715136797:0;cd ../../
+: 1715136841:0;mv .zshrc ./.config/zsh
+: 1715136843:0;ls
+: 1715136868:0;cd .config/zsh
+: 1715136869:0;ls
+: 1715136874:0;ls -a
+: 1715136880:0;cd ../
+: 1715136956:0;mv .zshenv ./.config/zsh
+: 1715136966:0;vim .config/zsh/.zshenv
+: 1715137047:0;vim .config/zsh/.zshrc
+: 1715137184:0;xdg-ninja
+: 1715137214:0;vim .zsh_history
+: 1715137374:0;mv .zsh_history ./.config/zsh/history
