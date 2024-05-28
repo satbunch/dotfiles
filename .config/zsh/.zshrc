@@ -143,3 +143,5 @@ lg()
 
 export HISTFILE="$XDG_STATE_HOME"/zsh/history
 compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
+
+export PATH="/usr/local/sbin:$PATH"
