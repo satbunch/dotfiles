@@ -29,8 +29,8 @@ Macos = "  " # nf-fa-apple
 
 # プロンプトの記号変更
 [character]
-success_symbol = "[󰀵 > ](bold green)"
-error_symbol = "[ > ](bold red)"
+success_symbol = "[  >](bold green)"
+error_symbol = "[ >](bold red)"
 
 [status]
 style = "red"
@@ -82,7 +82,7 @@ style = 'blue'
 [nodejs]
 symbol = " "
 style = 'fg:#9ece6a bg:#1a1b26'
-format = '[via $symbol($version )]($style)'
+format = '[$symbol($version )]($style)'
 
 [package]
 format = '[ $symbol$version ]($style)'
