@@ -5,20 +5,34 @@ live_config_reload = true
 [env]
 TERM = "xterm-256color"
 
+# window
 [window]
-padding.x = 10
-padding.y = 10
-dimensions.lines = 40
-dimensions.columns = 160
-position.x = 100
-position.y = 100
 opacity = 0.8
 blur = true
 option_as_alt = "Both"
+decorations = "buttonless"
 
+[window.padding]
+x = 10
+y = 10
+
+[window.dimensions]
+lines = 40
+columns = 160
+
+[window.position]
+x = 100
+y = 100
+
+# font
 [font]
 normal.family = "HackGen Console NF"
 normal.style = "Regular"
 bold.family = "HackGen Console NF"
 bold.style = "Bold"
 size = 16
+
+# alacritty起動時にtmuxを一緒に起動させたい時に使う
+# [shell]
+# program = "/bin/zsh"
+# args = ["-l", "-c", "tmux attach || tmux"]
