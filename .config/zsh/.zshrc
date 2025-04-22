@@ -4,6 +4,10 @@ alias vim="nvim"
 alias view="nvim -r"
 alias ls="eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions"
 
+# Python
+alias python="python3.11"
+alias pip="python3.11 -m pip"
+
 # Lazygit
 lg()
 {
@@ -17,17 +21,16 @@ lg()
     fi
 }
 
+# install nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 # 補完機能を有効にする
 autoload -Uz compinit && compinit
 
 # 小文字でも大文字ディレクトリ、ファイルを補完できるようにする
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
-# syantax-highlighting
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# zsh-autosuggestions
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 # init starship
 eval "$(starship init zsh)"
+export PATH="$HOME/.local/bin:$PATH"
