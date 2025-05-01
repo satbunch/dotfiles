@@ -1,0 +1,45 @@
+
+/* Kanagawa Theme for Joplin - userstyle.css */
+body, .note-content, .editor, .CodeMirror, .CodeMirror-gutters {
+  background-color: #16161D !important;
+  color: #DCD7BA !important;
+}
+
+a {
+  color: #7E9CD8 !important;
+}
+
+h1, h2, h3, h4 {
+  color: #D27E99 !important;
+}
+
+code, pre, .cm-s-default, .cm-s-default .CodeMirror-lines {
+  background-color: #223249 !important;
+  color: #DCD7BA !important;
+}
+
+div, span, p {
+  color: #DCD7BA !important;
+}
+
+::selection {
+  background: #7E9CD8 !important;
+  color: #16161D !important;
+}
+
+/* Adjust UI panels */
+.sidebar, .sidebar div, .list-item, .list-item .title {
+  background-color: #181820 !important;
+  color: #DCD7BA !important;
+}
+
+button, .button, .editor-toolbar, .menu {
+  background-color: #1F1F28 !important;
+  color: #DCD7BA !important;
+}
+
+input, textarea {
+  background-color: #1F1F28 !important;
+  color: #DCD7BA !important;
+  border-color: #2D4F67 !important;
+}
