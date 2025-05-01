@@ -1,0 +1,34 @@
+[
+  {
+    "command": "newTodo",
+    "accelerator": null
+  },
+  {
+    "command": "textCode",
+    "accelerator": null
+  },
+  {
+    "command": "tabsPinNote",
+    "accelerator": "Ctrl+T"
+  },
+  {
+    "command": "tabsSwitchLeft",
+    "accelerator": "Ctrl+Left"
+  },
+  {
+    "command": "tabsSwitchRight",
+    "accelerator": "Ctrl+Right"
+  },
+  {
+    "command": "tabsUnpinNote",
+    "accelerator": "Ctrl+W"
+  },
+  {
+    "command": "tabsSwitchLastActive",
+    "accelerator": "Ctrl+Tab"
+  },
+  {
+    "command": "insertTemplate",
+    "accelerator": "Shift+Ctrl+I"
+  }
+]
