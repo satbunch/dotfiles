@@ -33,6 +33,6 @@ bold.style = "Bold"
 size = 16
 
 # alacritty起動時にtmuxを一緒に起動させたい時に使う
-# [shell]
-# program = "/bin/zsh"
-# args = ["-l", "-c", "tmux attach || tmux"]
+[shell]
+program = "/bin/zsh"
+args = ["-l", "-c", "zellij attach --index 0 --create"]
