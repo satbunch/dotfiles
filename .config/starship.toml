@@ -1,6 +1,8 @@
 # シェルプロンプトの間に空行を追加します
 add_newline = true
 
+command_timeout = 2000
+
 format = """
 [](fg:#7aa2f7)\
 $os\
@@ -11,6 +13,7 @@ $git_status\
 $git_metrics\
 [](fg:#1a1b26)\
 $fill\
+$python\
 ([](fg:#1a1b26)$nodejs[](fg:208 bg:#1a1b26)$package)\
 \n$character\
 """
@@ -88,6 +91,13 @@ format = '[$symbol($version )]($style)'
 format = '[ $symbol$version ]($style)'
 # オレンジのカラーをfgに当てる
 style = 'fg:#000000 bg:208'
+
+[python]
+symbol = ' '                                         # 任意のアイコンに変更可
+format = '[🐍 $symbol($version )$virtualenv]($style) '
+style = 'bold green'
+version_format = 'short'                              # 'full', 'short' から
+disabled = false
 
 [cmd_duration]
 min_time = 1
