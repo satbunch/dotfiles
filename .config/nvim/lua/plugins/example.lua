@@ -1,95 +1,108 @@
--- since this is just an example spec, don't actually load anything here and return an empty spec
 -- stylua: ignore
 if true then return {} end
 
--- every spec file under the "plugins" directory will be loaded automatically by lazy.nvim
---
--- In your plugin files, you can:
--- * add extra plugins
--- * disable/enabled LazyVim plugins
--- * override the configuration of LazyVim plugins
+-- プラグイン定義（Lazy.nvim用）
+-- ファイル単位で自動読み込みされる
+
 return {
-  -- change trouble config
+
+  -- 🔧 Trouble: 診断表示プラグイン（設定変更）
   {
     "folke/trouble.nvim",
-    -- opts will be merged with the parent spec
     opts = { use_diagnostic_signs = true },
   },
 
-  -- disable trouble
-  -- { "folke/trouble.nvim", enabled = false },
-
-  -- override nvim-cmp and add cmp-emoji
+  -- 😀 補完（nvim-cmp + emoji対応 + supertab対応）
   {
     "hrsh7th/nvim-cmp",
-    dependencies = { "hrsh7th/cmp-emoji" },
+    dependencies = {
+      "hrsh7th/cmp-emoji",
+    },
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
+      local cmp = require("cmp")
+      local luasnip = require("luasnip")
+
+      local has_words_before = function()
+        local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+        return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+      end
+
+      -- emojiソースを追加
       table.insert(opts.sources, { name = "emoji" })
+
+      -- supertabのキーマッピングを上書き
+      opts.mapping = vim.tbl_extend("force", opts.mapping, {
+        ["<Tab>"] = cmp.mapping(function(fallback)
+          if cmp.visible() then
+            cmp.select_next_item()
+          elseif luasnip.expand_or_jumpable() then
+            luasnip.expand_or_jump()
+          elseif has_words_before() then
+            cmp.complete()
+          else
+            fallback()
+          end
+        end, { "i", "s" }),
+
+        ["<S-Tab>"] = cmp.mapping(function(fallback)
+          if cmp.visible() then
+            cmp.select_prev_item()
+          elseif luasnip.jumpable(-1) then
+            luasnip.jump(-1)
+          else
+            fallback()
+          end
+        end, { "i", "s" }),
+      })
     end,
   },
 
-  -- add pyright to lspconfig
+  -- LuaSnip: デフォルトの <Tab> を無効化
   {
-    "neovim/nvim-lspconfig",
-    ---@class PluginLspOpts
-    opts = {
-      ---@type lspconfig.options
-      servers = {
-        -- pyright will be automatically installed with mason and loaded with lspconfig
-        pyright = {},
-      },
-    },
+    "L3MON4D3/LuaSnip",
+    keys = function()
+      return {}
+    end,
   },
 
-  -- add tsserver and setup with typescript.nvim instead of lspconfig
+  -- 🧠 LSP設定（lspconfig + mason + 各言語別設定）
   {
     "neovim/nvim-lspconfig",
     dependencies = {
-      "jose-elias-alvarez/typescript.nvim",
-      init = function()
-        require("lazyvim.util").lsp.on_attach(function(_, buffer)
-          -- stylua: ignore
-          vim.keymap.set( "n", "<leader>co", "TypescriptOrganizeImports", { buffer = buffer, desc = "Organize Imports" })
-          vim.keymap.set("n", "<leader>cR", "TypescriptRenameFile", { desc = "Rename File", buffer = buffer })
-        end)
-      end,
-    },
-    ---@class PluginLspOpts
-    opts = {
-      ---@type lspconfig.options
-      servers = {
-        -- tsserver will be automatically installed with mason and loaded with lspconfig
-        tsserver = {},
+      -- TypeScript専用設定サポート
+      {
+        "jose-elias-alvarez/typescript.nvim",
+        init = function()
+          require("lazyvim.util").lsp.on_attach(function(_, buffer)
+            vim.keymap.set(
+              "n",
+              "<leader>co",
+              "TypescriptOrganizeImports",
+              { buffer = buffer, desc = "Organize Imports" }
+            )
+            vim.keymap.set("n", "<leader>cR", "TypescriptRenameFile", { buffer = buffer, desc = "Rename File" })
+          end)
+        end,
       },
-      -- you can do any additional lsp server setup here
-      -- return true if you don't want this server to be setup with lspconfig
-      ---@type table<string, fun(server:string, opts:_.lspconfig.options):boolean?>
+    },
+    opts = {
+      servers = {
+        pyright = {},
+        tsserver = {},
+        rust_analyzer = {}, -- 追加済みのrust-analyzer設定
+      },
       setup = {
-        -- example to setup with typescript.nvim
+        -- TypeScript用に typescript.nvim を使用
         tsserver = function(_, opts)
           require("typescript").setup({ server = opts })
           return true
         end,
-        -- Specify * to use this function as a fallback for any server
-        -- ["*"] = function(server, opts) end,
       },
     },
   },
 
-  -- the opts function can also be used to change the default opts:
-  {
-    "nvim-lualine/lualine.nvim",
-    event = "VeryLazy",
-    opts = function(_, opts)
-      table.insert(opts.sections.lualine_x, "😄")
-    end,
-  },
-
-  -- use mini.starter instead of alpha
-  { import = "lazyvim.plugins.extras.ui.mini-starter" },
-
-  -- add any tools you want to have installed below
+  -- Mason：LSP以外のCLIツールを自動インストール
   {
     "williamboman/mason.nvim",
     opts = {
@@ -102,55 +115,17 @@ return {
     },
   },
 
-  -- Use <tab> for completion and snippets (supertab)
-  -- first: disable default <tab> and <s-tab> behavior in LuaSnip
+  -- 📊 ステータスラインに絵文字追加
   {
-    "L3MON4D3/LuaSnip",
-    keys = function()
-      return {}
+    "nvim-lualine/lualine.nvim",
+    event = "VeryLazy",
+    opts = function(_, opts)
+      table.insert(opts.sections.lualine_x, "😄")
     end,
   },
-  -- then: setup supertab in cmp
+
+  -- 🎉 スタート画面：alphaの代わりにmini.starterを使用
   {
-    "hrsh7th/nvim-cmp",
-    dependencies = {
-      "hrsh7th/cmp-emoji",
-    },
-    ---@param opts cmp.ConfigSchema
-    opts = function(_, opts)
-      local has_words_before = function()
-        unpack = unpack or table.unpack
-        local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-        return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
-      end
-
-      local luasnip = require("luasnip")
-      local cmp = require("cmp")
-
-      opts.mapping = vim.tbl_extend("force", opts.mapping, {
-        ["<Tab>"] = cmp.mapping(function(fallback)
-          if cmp.visible() then
-            cmp.select_next_item()
-            -- You could replace the expand_or_jumpable() calls with expand_or_locally_jumpable()
-            -- this way you will only jump inside the snippet region
-          elseif luasnip.expand_or_jumpable() then
-            luasnip.expand_or_jump()
-          elseif has_words_before() then
-            cmp.complete()
-          else
-            fallback()
-          end
-        end, { "i", "s" }),
-        ["<S-Tab>"] = cmp.mapping(function(fallback)
-          if cmp.visible() then
-            cmp.select_prev_item()
-          elseif luasnip.jumpable(-1) then
-            luasnip.jump(-1)
-          else
-            fallback()
-          end
-        end, { "i", "s" }),
-      })
-    end,
+    import = "lazyvim.plugins.extras.ui.mini-starter",
   },
 }

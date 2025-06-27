@@ -3,8 +3,7 @@ alias vi="nvim"
 alias vim="nvim"
 alias view="nvim -r"
 alias ls="eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions"
-alias python="python3.11"
-alias pip="python3.11 -m pip"
+alias ll="ls -la"
 
 # Lazygit
 lg()
