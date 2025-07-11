@@ -27,6 +27,15 @@ keymap.set("n", "sk", "<C-w>k")
 keymap.set("n", "sj", "<C-w>j")
 keymap.set("n", "sl", "<C-w>l")
 
+-- Float error comment
+keymap.set("n", "<leader>e", vim.diagnostic.open_float)
+keymap.set("n", "[d", function()
+  vim.diagnostic.jump({ count = 1, float = true })
+end)
+keymap.set("n", "]d", function()
+  vim.diagnostic.jump({ count = -1, float = true })
+end)
+
 -- Plugin keymaps
 
 -- telescope
