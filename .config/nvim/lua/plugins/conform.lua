@@ -2,18 +2,19 @@ return {
   "stevearc/conform.nvim",
   -- LazyVim と互換性を保つため `opts = function()` を使う
   opts = function()
+    local eslint_files = {
+      ".eslintrc.js",
+      ".eslintrc.cjs",
+      ".eslintrc.json",
+      ".eslintrc",
+    }
+
     ---@type conform.setupOpts
     local opts = {
       -- 保存時に整形する設定（LazyVimのスタイル）
       format_on_save = function(bufnr)
         local utils = require("conform.util")
-        return utils.root_has_file({
-          ".eslintrc.js",
-          ".eslintrc.cjs",
-          ".eslintrc.json",
-          ".eslintrc",
-          "package.json", -- 任意で追加（eslintConfig がある場合）
-        })
+        return utils.root_has_file(vim.list_extend(eslint_files, { "package.json" }))
       end,
 
       -- 整形オプション（タイムアウトなど）
@@ -39,12 +40,7 @@ return {
       formatters = {
         eslint_d = {
           condition = function(ctx)
-            return vim.fs.find({
-              ".eslintrc.js",
-              ".eslintrc.cjs",
-              ".eslintrc.json",
-              ".eslintrc",
-            }, { upward = true, path = ctx.filename })[1]
+            return vim.fs.find(eslint_files, { upward = true, path = ctx.filename })[1]
           end,
         },
       },
