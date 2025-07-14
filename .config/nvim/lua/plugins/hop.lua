@@ -7,6 +7,6 @@ return {
     })
   end,
   keys = {
-    { mode = "", "s", "<cmd>HopChar<CR>", desc = "description" },
+    { mode = "n", "s", "<cmd>HopChar<CR>", desc = "description" },
   },
 }
