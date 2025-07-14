@@ -2,20 +2,17 @@
 alias vi="nvim"
 alias vim="nvim"
 alias view="nvim -r"
-alias ls="eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions"
-alias ll="ls -la"
+alias ls="eza --icons"
+alias ll="eza -l --icons"
+alias la="eza -la --icons"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 
 # Lazygit
 lg()
 {
-    export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
-
-    lazygit "$@"
-
-    if [ -f $LAZYGIT_NEW_DIR_FILE ]; then
-            cd "$(cat $LAZYGIT_NEW_DIR_FILE)"
-            rm -f $LAZYGIT_NEW_DIR_FILE > /dev/null
-    fi
+  lazygit "$@"
 }
 
 # install nvm

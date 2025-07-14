@@ -1,18 +1,4 @@
--- stylua: ignore
-if true then return {} end
-
--- プラグイン定義（Lazy.nvim用）
--- ファイル単位で自動読み込みされる
-
 return {
-
-  -- 🔧 Trouble: 診断表示プラグイン（設定変更）
-  {
-    "folke/trouble.nvim",
-    opts = { use_diagnostic_signs = true },
-  },
-
-  -- 😀 補完（nvim-cmp + emoji対応 + supertab対応）
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
@@ -56,29 +42,5 @@ return {
         end, { "i", "s" }),
       })
     end,
-  },
-
-  -- LuaSnip: デフォルトの <Tab> を無効化
-  {
-    "L3MON4D3/LuaSnip",
-    keys = function()
-      return {}
-    end,
-  },
-
-  -- 🧠 LSP設定（lspconfig + mason + 各言語別設定）
-
-  -- 📊 ステータスラインに絵文字追加
-  {
-    "nvim-lualine/lualine.nvim",
-    event = "VeryLazy",
-    opts = function(_, opts)
-      table.insert(opts.sections.lualine_x, "😄")
-    end,
-  },
-
-  -- 🎉 スタート画面：alphaの代わりにmini.starterを使用
-  {
-    import = "lazyvim.plugins.extras.ui.mini-starter",
   },
 }
