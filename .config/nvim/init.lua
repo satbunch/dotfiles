@@ -1,1 +1,2 @@
-require("config.lazy")
+require("satbunch.core")
+require("satbunch.lazy")
