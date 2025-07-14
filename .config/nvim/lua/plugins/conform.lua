@@ -12,7 +12,7 @@ return {
     ---@type conform.setupOpts
     local opts = {
       -- 保存時に整形する設定（LazyVimのスタイル）
-      format_on_save = function(bufnr)
+      format_on_save = function(_)
         local utils = require("conform.util")
         return utils.root_has_file(vim.list_extend(eslint_files, { "package.json" }))
       end,
@@ -39,8 +39,9 @@ return {
       -- formatter 単体ごとの詳細設定
       formatters = {
         eslint_d = {
+          ---@param ctx conform.Context
           condition = function(ctx)
-            return vim.fs.find(eslint_files, { upward = true, path = ctx.filename })[1]
+            return vim.fs.find(eslint_files, { upward = true, path = ctx.filename })[1] ~= nil
           end,
         },
       },

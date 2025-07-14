@@ -1,5 +1,5 @@
 return {
-  -- LSP 基本設定
+  -- lsp 基本設定
   {
     "neovim/nvim-lspconfig",
 
@@ -9,32 +9,38 @@ return {
         lua_ls = function(_, opts)
           opts.settings = vim.tbl_deep_extend("force", opts.settings or {}, {
             Lua = {
+              workspace = {
+                library = {
+                  vim.fn.stdpath("data") .. "/lazy/conform.nvim",
+                  vim.fn.stdpath("data") .. "/lazy/typescript.nvim",
+                },
+              },
               diagnostics = {
                 globals = { "vim" },
               },
             },
           })
-          return false -- LazyVim 側の setup をそのまま実行させる
+          return false -- lazyvim 側の setup をそのまま実行させる
         end,
 
-        -- TypeScript 用に typescript.nvim を使用
+        -- typescript 用に typescript.nvim を使用
         tsserver = function(_, opts)
           require("typescript").setup({ server = opts })
-          return true -- LazyVim 側で再 setup させない
+          return true -- lazyvim 側で再 setup させない
         end,
       },
 
-      -- LSP サーバーごとの基本設定
+      -- lsp サーバーごとの基本設定
       servers = {
         pyright = {},
         tsserver = {},
         rust_analyzer = {},
-        -- lua_ls の初期設定は LazyVim 側に任せるのでここには書かない
+        -- lua_ls の初期設定は lazyvim 側に任せるのでここには書かない
       },
     },
 
     dependencies = {
-      -- TypeScript 用プラグイン
+      -- typescript 用プラグイン
       {
         "jose-elias-alvarez/typescript.nvim",
         init = function()
@@ -42,17 +48,17 @@ return {
             vim.keymap.set(
               "n",
               "<leader>co",
-              "TypescriptOrganizeImports",
-              { buffer = buffer, desc = "Organize Imports" }
+              "typescriptorganizeimports",
+              { buffer = buffer, desc = "organize imports" }
             )
-            vim.keymap.set("n", "<leader>cR", "TypescriptRenameFile", { buffer = buffer, desc = "Rename File" })
+            vim.keymap.set("n", "<leader>cr", "typescriptrenamefile", { buffer = buffer, desc = "rename file" })
           end)
         end,
       },
     },
   },
 
-  -- CLI ツール系 (mason で管理)
+  -- cli ツール系 (mason で管理)
   {
     "williamboman/mason.nvim",
     opts = {
@@ -64,16 +70,4 @@ return {
       },
     },
   },
-
-  -- lazydev.nvim & luvit-meta (Lua 開発補完強化)
-  {
-    "folke/lazydev.nvim",
-    ft = "lua",
-    opts = {
-      library = {
-        { path = "luvit-meta/library", words = { "vim%.uv" } },
-      },
-    },
-  },
-  { "Bilal2453/luvit-meta", lazy = true },
 }
