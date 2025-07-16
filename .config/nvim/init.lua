@@ -1,2 +1,3 @@
-require("satbunch.core")
-require("satbunch.lazy")
+require("core.keymaps")
+require("core.options")
+require("core.lazy")
