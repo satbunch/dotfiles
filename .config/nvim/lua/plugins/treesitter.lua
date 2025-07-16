@@ -1,38 +1,57 @@
 return {
-  -- add more treesitter parsers
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
+  "nvim-treesitter/nvim-treesitter",
+  event = { "BufReadPre", "BufNewFile" },
+  build = ":TSUpdate",
+  dependencies = {
+    "windwp/nvim-ts-autotag",
+  },
+  config = function()
+    local treesitter = require("nvim-treesitter.configs")
+
+    treesitter.setup({
+      highlight = {
+        enable = true,
+      },
+      indent = { enable = true },
+      autotag = {
+        enable = true,
+      },
       ensure_installed = {
-        "bash",
-        "html",
-        "javascript",
         "json",
-        "lua",
+        "javascript",
+        "typescript",
+        "tsx",
+        "yaml",
+        "html",
+        "css",
+        "prisma",
         "markdown",
         "markdown_inline",
-        "python",
-        "query",
-        "regex",
-        "tsx",
-        "typescript",
+        "svelte",
+        "graphql",
+        "bash",
+        "lua",
         "vim",
-        "yaml",
+        "dockerfile",
+        "gitignore",
+        "query",
+        "vimdoc",
+        "c",
+        "rust",
+        "python",
+        "go",
+        "ruby",
+        "sql",
       },
-    },
-  },
-
-  -- since `vim.tbl_deep_extend`, can only merge tables and not lists, the code above
-  -- would overwrite `ensure_installed` with the new value.
-  -- If you'd rather extend the default config, use the code below instead:
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = function(_, opts)
-      -- add tsx and treesitter
-      vim.list_extend(opts.ensure_installed, {
-        "tsx",
-        "typescript",
-      })
-    end,
-  },
+      incremental_selection = {
+        enable = true,
+        keymaps = {
+          init_selection = "<C-space>",
+          node_incremental = "<C-space>",
+          scope_incremental = false,
+          node_decremental = "<bs>",
+        },
+      },
+    })
+  end,
 }
