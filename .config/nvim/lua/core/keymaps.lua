@@ -1,41 +1,48 @@
 vim.g.mapleader = " "
 
-local keymap = vim.keymap
-local opts = { noremap = true, silent = true }
+local function keymap(mode, keys, cmd, opts)
+  vim.keymap.set(mode, keys, cmd, vim.tbl_extend("force", {
+    noremap = true,
+    silent = true,
+  }, opts or {}))
+end
 
 -- Change Normal Mode
-keymap.set("i", "jj", "<Esc>", { desc = "Exit insert mode with jj" })
+keymap("i", "jj", "<Esc>", { desc = "Exit insert mode with jj" })
+
+-- Disable CommandLine Wihdow
+keymap("n", "q:", "<nop>", { desc = "Disable cmdwin" })
 
 -- Increment/Decrement
-keymap.set("n", "+", "<C-a>", { desc = "Increment number" })
-keymap.set("n", "-", "<C-x>", { desc = "Decrement number" })
+keymap("n", "+", "<C-a>", { desc = "Increment number" })
+keymap("n", "-", "<C-x>", { desc = "Decrement number" })
 
 -- Select All
-keymap.set("n", "<C-a>", "gg<S-v>G", { desc = "Select all" })
+keymap("n", "<C-a>", "gg<S-v>G", { desc = "Select all" })
 
 -- Tab managemant
-keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" })
-keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" })
-keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
-keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
-keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
+keymap("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" })
+keymap("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" })
+keymap("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
+keymap("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
+keymap("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
 
 -- Split window
-keymap.set("n", "<leader>ss", "<cmd>split<CR>", opts, { desc = "Split window hirizontally" })
-keymap.set("n", "<leader>sv", "<cmd>vsplit<CR>", opts, { desc = "Split window vertically" })
-keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
+keymap("n", "<leader>ss", "<cmd>split<CR>", { desc = "Split window hirizontally" })
+keymap("n", "<leader>sv", "<cmd>vsplit<CR>", { desc = "Split window vertically" })
+keymap("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
 
 -- Move window
-keymap.set("n", "<leader>sh", "<C-w>h", { desc = "Move left window" })
-keymap.set("n", "<leader>sk", "<C-w>k", { desc = "Move up window" })
-keymap.set("n", "<leader>sj", "<C-w>j", { desc = "Move down window" })
-keymap.set("n", "<leader>sl", "<C-w>l", { desc = "Move right window" })
+keymap("n", "<leader>sh", "<C-w>h", { desc = "Move left window" })
+keymap("n", "<leader>sk", "<C-w>k", { desc = "Move up window" })
+keymap("n", "<leader>sj", "<C-w>j", { desc = "Move down window" })
+keymap("n", "<leader>sl", "<C-w>l", { desc = "Move right window" })
 
 -- Float error comment
--- keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "" })
--- keymap.set("n", "[d", function()
+-- keymap("n", "<leader>e", vim.diagnostic.open_float, { desc = "" })
+-- keymap("n", "[d", function()
 --   vim.diagnostic.jump({ count = 1, float = true })
 -- end)
--- keymap.set("n", "]d", function()
+-- keymap("n", "]d", function()
 --   vim.diagnostic.jump({ count = -1, float = true })
 -- end)
