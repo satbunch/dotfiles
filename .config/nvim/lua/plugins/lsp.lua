@@ -56,7 +56,6 @@ local function config()
         })
       end
     end,
-    capabilities = require("cmp_nvim_lsp").default_capabilities(),
   })
 end
 
@@ -65,7 +64,6 @@ return {
   ft = { "*" },
   dependencies = {
     { "folke/lazydev.nvim",            ft = { "lua" } },
-    { "hrsh7th/cmp-nvim-lsp",          ft = { "*" } },
     { "mason-org/mason-lspconfig.nvim" },
   },
   config = config,
