@@ -13,6 +13,9 @@ keymap("i", "jj", "<Esc>", { desc = "Exit insert mode with jj" })
 -- Disable CommandLine Wihdow
 keymap("n", "q:", "<nop>", { desc = "Disable cmdwin" })
 
+-- Disable Search Highlight
+keymap("n", "<Esc><Esc>", "<cmd>nohlsearch<CR>", { desc = "Disable search highlight" })
+
 -- Increment/Decrement
 keymap("n", "+", "<C-a>", { desc = "Increment number" })
 keymap("n", "-", "<C-x>", { desc = "Decrement number" })
