@@ -5,6 +5,12 @@ return {
       includePackageJsonAutoImports = "auto",
       includeCompletionsForModuleExports = true,
       includeCompletionsWithInsertText = true,
+      includeAutomaticOptionalChainCompletions = true,
+      includeCompletionsForImportStatements = true,
+      allowIncompleteCompletions = true,
+      -- プロジェクトタイプに応じて自動調整
+      importModuleSpecifier = "relative",
+      quotePreference = "auto",
     },
   },
   settings = {
@@ -21,6 +27,21 @@ return {
       suggest = {
         includeCompletionsForModuleExports = true,
         includeCompletionsForImportStatements = true,
+        includeAutomaticOptionalChainCompletions = true,
+        autoImports = true,
+      },
+      preferences = {
+        includePackageJsonAutoImports = "auto",
+        allowIncompleteCompletions = true,
+        -- プロジェクトタイプに応じて動的に変更される
+        importModuleSpecifier = "relative",
+        quotePreference = "auto",
+      },
+      format = {
+        enable = true,
+      },
+      validate = {
+        enable = true,
       },
     },
     javascript = {
@@ -36,6 +57,20 @@ return {
       suggest = {
         includeCompletionsForModuleExports = true,
         includeCompletionsForImportStatements = true,
+        includeAutomaticOptionalChainCompletions = true,
+        autoImports = true,
+      },
+      preferences = {
+        includePackageJsonAutoImports = "auto",
+        allowIncompleteCompletions = true,
+        importModuleSpecifier = "relative",
+        quotePreference = "auto",
+      },
+      format = {
+        enable = true,
+      },
+      validate = {
+        enable = true,
       },
     },
   },
