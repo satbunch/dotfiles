@@ -1,112 +1,105 @@
-# シェルプロンプトの間に空行を追加します
+# ===== Global =====
 add_newline = true
-
-command_timeout = 2000
+palette = 'kanagawa'
 
 format = """
-[](fg:#7aa2f7)\
+[](fg:red)\
 $os\
-[ ](fg:#7aa2f7 bg:#1a1b26)\
+[ ](fg:red bg:orange)\
 $directory\
+[ ](fg:orange bg:yellow)\
 $git_branch\
+[ ](fg:yellow bg:green)\
 $git_status\
 $git_metrics\
-[](fg:#1a1b26)\
-$fill\
-$python\
-([](fg:#1a1b26)$nodejs[](fg:208 bg:#1a1b26)$package)\
-\n$character\
+[ ](fg:green bg:cyan)\
+$aws\
+[ ](fg:cyan bg:blue)\
+$time\
+[ ](fg:blue)
+$character
 """
 
-right_format = """
-$cmd_duration
-$time
-"""
+right_format = ''
 
-[os]
-format = "[$symbol]($style)"
-style = 'fg:#1a1b26 bg:#7aa2f7'
-disabled = false
-[os.symbols]
-Macos = "  " # nf-fa-apple
-
-# プロンプトの記号変更
+# ===== Prompt Symbols =====
 [character]
-success_symbol = "[  >](bold green)"
-error_symbol = "[ >](bold red)"
+success_symbol = '[ ❯](bold bg) '
+error_symbol = '[ ❯](bold red) '
 
-[status]
-style = "red"
-symbol = "🔴"
-format = '[\[$common_meaning$signal_name$maybe_int $status\]]($style) '
-map_symbol = true
+# ===== OS =====
+[os]
 disabled = false
+format = '[$symbol $username](fg:fg bg:red)'
 
+[os.symbols]
+Macos = ''
+Ubuntu = ' '
+
+# ===== Directory =====
 [directory]
-truncation_length = 6
-truncation_symbol = ' '                                 # nf-fa-folder_open
+truncation_length = 100
+truncation_symbol = ' '
 truncate_to_repo = false
-home_symbol = ' ~'                                      # nf-fa-home
-style = 'fg:#7aa2f7 bg:#1a1b26'
-read_only = ' 󰌾 '                                        # nf-md-lock
-read_only_style = 'fg:#f7768e bg:#1a1b26'
+home_symbol = ' ~'
+read_only = '󰌾 '
 format = '[$path]($style)[$read_only]($read_only_style)'
+style = 'fg:fg bg:orange'
+read_only_style = 'fg:fg bg:orange'
 
+# ===== Git Branch =====
 [git_branch]
-symbol = '  '                                         # nf-fa-github_alt, nf-fa-code_fork
-truncation_symbol = ''
-style = 'fg:#7aa2f7 bg:#1a1b26'
-format = '[  $symbol$branch(:$remote_branch)]($style)' # nf-pl-left_soft_divider
+symbol = '  '
+format = '[$symbol$branch(:$remote_branch)]($style)'
+style = 'fg:fg bg:yellow'
 
+# ===== Git Status =====
 [git_status]
-style = 'fg:#e0af68 bg:#1a1b26'
+format = '[$all_status$ahead_behind]($style)'
+style = 'fg:fg bg:green'
 conflicted = '='
-ahead = '⇡${count}'
+ahead = "⇡${count}"
 behind = '⇣${count}'
 diverged = '⇕'
 up_to_date = '✓'
 untracked = '?'
-stashed = '$'
+stashed = '\$'
 modified = '!${count}'
 renamed = '»'
 deleted = '✘'
-format = '([\[$all_status$ahead_behind\]]($style))'
 
+# ===== Git Metrics =====
 [git_metrics]
-added_style = 'fg:#9ece6a bg:#1a1b26'
-deleted_style = 'fg:#9ece6a bg:#1a1b26'
-format = '[+$added/-$deleted]($deleted_style)'
+added_style = 'fg:fg bg:green'
+deleted_style = 'fg:fg bg:green'
+format = '[ +$added/-$deleted]($deleted_style)'
 disabled = false
 
-[fill]
-symbol = '─'
-style = 'blue'
+# ===== AWS =====
+[aws]
+format = '[$symbol($profile)(\($region\))]($style)'
+style = 'fg:fg bg:cyan'
+symbol = '🅰 '
+[aws.region_aliases]
+ap-southeast-2 = 'au'
+us-east-1 = 'va'
+[aws.profile_aliases]
+CompanyGroupFrobozzOnCallAccess = 'Frobozz'
 
-[nodejs]
-symbol = " "
-style = 'fg:#9ece6a bg:#1a1b26'
-format = '[$symbol($version )]($style)'
-
-[package]
-format = '[ $symbol$version ]($style)'
-# オレンジのカラーをfgに当てる
-style = 'fg:#000000 bg:208'
-
-[python]
-symbol = ' '                                         # 任意のアイコンに変更可
-format = '[🐍 $symbol($version )$virtualenv]($style) '
-style = 'bold green'
-version_format = 'short'                              # 'full', 'short' から
-disabled = false
-
-[cmd_duration]
-min_time = 1
-style = 'fg:#e0af68'
-format = "[   $duration]($style)" # nf-pl-right_soft_divider, nf-mdi-clock
-
+# ===== Time =====
 [time]
 disabled = false
-style = 'fg:#73daca'
-format = '[   $time]($style)'
-time_format = '%T'
-utc_time_offset = '+9'
+format = '[ $time]($style)'
+style = 'fg:fg bg:blue'
+
+# ===== Palette =====
+[palettes.kanagawa]
+fg = '#1F1F28'
+orange = '#FFA066'
+blue = '#7E9CD8'
+yellow = '#E6C384'
+red = '#E46876'
+brown = '#363646'
+green = '#98BB6C'
+bg = '#DCD7BA'
+cyan = '#7AA89F'
