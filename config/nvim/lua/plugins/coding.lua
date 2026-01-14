@@ -59,7 +59,7 @@ return {
         desc = "Toggle Lazygit (float)",
       },
       {
-        "c-\\",
+        "<c-\\>",
         function()
           vim.g.__toggleterm_default:toggle()
         end,
