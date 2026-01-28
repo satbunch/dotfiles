@@ -109,4 +109,30 @@ return {
       },
     },
   },
+
+  -- === snacks.explorer ===
+  {
+    "folke/snacks.nvim",
+    opts = {
+      picker = {
+        sources = {
+          explorer = {
+            layout = {
+              preview = "main",
+              layout = {
+                width = 100,
+                min_width = 40,
+                position = "left",
+                border = "none",
+                box = "vertical",
+                { win = "input", height = 1 },
+                { win = "list" },
+                { win = "preview", height = 0.4 },
+              },
+            },
+          },
+        },
+      },
+    },
+  },
 }

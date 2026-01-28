@@ -48,24 +48,5 @@ return {
         default:toggle()
       end, { desc = "Toggle default terminal (float)" })
     end,
-
-    keys = {
-      {
-        "lg",
-        function()
-          vim.g.__toggleterm_lazygit:toggle()
-        end,
-        mode = { "n", "t" },
-        desc = "Toggle Lazygit (float)",
-      },
-      {
-        "<c-\\>",
-        function()
-          vim.g.__toggleterm_default:toggle()
-        end,
-        mode = { "n", "t" },
-        desc = "Toggle default terminal (float)",
-      },
-    },
   },
 }
