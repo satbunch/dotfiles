@@ -118,20 +118,25 @@ return {
         sources = {
           explorer = {
             layout = {
-              preview = "main",
+              -- preview = "main",
               layout = {
-                width = 100,
+                width = 80,
                 min_width = 40,
-                position = "left",
-                border = "none",
-                box = "vertical",
-                { win = "input", height = 1 },
-                { win = "list" },
-                { win = "preview", height = 0.4 },
               },
             },
           },
         },
+      },
+      indent = {
+        enabled = false,
+        -- only_scope = true,
+        -- scope = {
+        --   enabled = true,
+        --   hl = "SnacksIndentScope",
+        -- },
+        -- animate = {
+        --   enabled = false,
+        -- },
       },
     },
   },
