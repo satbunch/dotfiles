@@ -1,5 +1,8 @@
 local opt = vim.opt
 
+opt.exrc = true
+opt.secure = true
+
 opt.relativenumber = true
 opt.number = true
 
