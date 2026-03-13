@@ -3,7 +3,7 @@ theme = Kanagawa Wave
 
 # Font
 font-family = HackGen Console NF Regular
-font-feature = -dlig
+font-feature = -calt, -dlig
 
 # Window
 window-padding-x = 20
@@ -26,4 +26,3 @@ cursor-style-blink = false
 macos-titlebar-style = transparent
 macos-titlebar-proxy-icon = hidden
 macos-option-as-alt = true
-
