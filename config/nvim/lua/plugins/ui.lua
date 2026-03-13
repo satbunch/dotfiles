@@ -96,18 +96,7 @@ return {
   -- === noice.nvim ===
   {
     "folke/noice.nvim",
-    opts = {
-      lsp = {
-        progress = { enabled = false },
-      },
-      presets = {
-        bottom_search = true,
-        command_palette = true,
-        long_message_to_split = true,
-        inc_rename = false,
-        lsp_doc_border = true,
-      },
-    },
+    enabled = false,
   },
 
   -- === snacks.explorer ===
@@ -120,7 +109,7 @@ return {
             layout = {
               -- preview = "main",
               layout = {
-                width = 80,
+                width = 60,
                 min_width = 40,
               },
             },
