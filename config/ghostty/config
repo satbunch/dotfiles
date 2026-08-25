@@ -25,4 +25,4 @@ cursor-style-blink = false
 # For MacOS
 macos-titlebar-style = transparent
 macos-titlebar-proxy-icon = hidden
-macos-option-as-alt = true
+macos-option-as-alt = left
