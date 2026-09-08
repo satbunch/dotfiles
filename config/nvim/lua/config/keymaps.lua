@@ -47,3 +47,7 @@ keymap("n", "<leader>sh", "<C-w>h", { desc = "Move left window" })
 keymap("n", "<leader>sk", "<C-w>k", { desc = "Move up window" })
 keymap("n", "<leader>sj", "<C-w>j", { desc = "Move down window" })
 keymap("n", "<leader>sl", "<C-w>l", { desc = "Move right window" })
+
+-- Disable LazyVim's default Snacks terminal toggle (using toggleterm's <C-\> instead)
+vim.keymap.del({ "n", "t" }, "<c-/>")
+vim.keymap.del({ "n", "t" }, "<c-_>")
