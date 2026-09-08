@@ -1,0 +1,50 @@
+{
+  "title": "かな + hjkl → 矢印キー",
+  "rules": [
+    {
+      "description": "かな長押し中にhjklを矢印キーとして使う",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "japanese_kana",
+            "modifiers": { "optional": ["any"] }
+          },
+          "to": [
+            { "set_variable": { "name": "kana_layer", "value": 1 } }
+          ],
+          "to_after_key_up": [
+            { "set_variable": { "name": "kana_layer", "value": 0 } }
+          ],
+          "to_if_alone": [
+            { "key_code": "japanese_kana" }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "h" },
+          "to": [{ "key_code": "left_arrow" }],
+          "conditions": [{ "type": "variable_if", "name": "kana_layer", "value": 1 }]
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "j" },
+          "to": [{ "key_code": "down_arrow" }],
+          "conditions": [{ "type": "variable_if", "name": "kana_layer", "value": 1 }]
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "k" },
+          "to": [{ "key_code": "up_arrow" }],
+          "conditions": [{ "type": "variable_if", "name": "kana_layer", "value": 1 }]
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "l" },
+          "to": [{ "key_code": "right_arrow" }],
+          "conditions": [{ "type": "variable_if", "name": "kana_layer", "value": 1 }]
+        }
+      ]
+    }
+  ]
+}
