@@ -17,6 +17,14 @@ LINKS=(
   "starship-kanagawa-wave.toml"
 )
 
+# zshはXDG非対応のため ~/(HOME直下) に直接貼る。config/zsh/ 内のファイル名をそのまま使う
+ZSH_SRC_DIR="$SRC_DIR/zsh"
+HOME_LINKS=(
+  ".zshrc"
+  ".zshenv"
+  ".zprofile"
+)
+
 info() { printf "[info] %s\n" "$*"; }
 warn() { printf "[warn] %s\n" "$*" >&2; }
 die()  { printf "[error] %s\n" "$*" >&2; exit 1; }
@@ -56,6 +64,21 @@ link_one() {
   info "linked: $dest -> $src"
 }
 
+link_home() {
+  local name="$1"
+  local src="$ZSH_SRC_DIR/$name"
+  local dest="$HOME/$name"
+
+  [[ -e "$src" ]] || die "missing source: $src"
+
+  if [[ -e "$dest" && ! -L "$dest" ]]; then
+    backup_if_needed "$dest"
+  fi
+
+  ln -sfn "$src" "$dest"
+  info "linked: $dest -> $src"
+}
+
 info "dotfiles: $DOTFILES_DIR"
 info "source : $SRC_DIR"
 info "dest   : $DEST_DIR"
@@ -69,6 +92,10 @@ for entry in "${LINKS[@]}"; do
     src_name="$entry"
   fi
   link_one "$link_name" "$src_name"
+done
+
+for name in "${HOME_LINKS[@]}"; do
+  link_home "$name"
 done
 
 if [[ -n "${BACKUP_DIR:-}" && -d "${BACKUP_DIR:-/nope}" ]]; then
