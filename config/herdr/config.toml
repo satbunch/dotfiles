@@ -1,0 +1,73 @@
+onboarding = false
+
+# tmux (~/.config/tmux/tmux.conf) に合わせたキーバインド
+[keys]
+# プレフィックスを ctrl+q に
+prefix = "ctrl+q"
+
+# 設定リロード（リサイズモードは shift+r へ退避）
+reload_config = "prefix+r"
+resize_mode = "prefix+shift+r"
+
+# 分割: v=左右, s=上下（設定画面は shift+s へ退避）
+split_vertical = "prefix+v"
+split_horizontal = "prefix+s"
+settings = "prefix+shift+s"
+
+# 一覧（tmux の choose-session 相当）。右ペインとの入れ替えは割り当てなし
+goto = ["prefix+g", "prefix+shift+l"]
+swap_pane_right = []
+
+# vim 風ペイン移動
+focus_pane_left = "prefix+h"
+focus_pane_down = "prefix+j"
+focus_pane_up = "prefix+k"
+focus_pane_right = "prefix+l"
+
+# Alt+hjkl でペインをリサイズ（プレフィックスなし）
+resize_pane_left = "alt+h"
+resize_pane_down = "alt+j"
+resize_pane_up = "alt+k"
+resize_pane_right = "alt+l"
+
+# Shift+←/→ でタブの順番を入れ替え
+move_tab_previous = "prefix+shift+left"
+move_tab_next = "prefix+shift+right"
+
+# タブ名の変更（tmux の rename-window と同じ prefix+,）
+rename_tab = "prefix+comma"
+
+# ナビゲートモード（prefix+w）で j/k でスペースを選択
+navigate_workspace_down = ["down", "j"]
+navigate_workspace_up = ["up", "k"]
+# 上下のペイン選択は j/k と重なるので ctrl+j/k へ退避
+navigate_pane_down = "ctrl+j"
+navigate_pane_up = "ctrl+k"
+
+# prefix+x / prefix+shift+x は確認付きで閉じる（標準の即時クローズは解除）
+close_pane = []
+close_tab = []
+
+[[keys.command]]
+key = "prefix+x"
+type = "popup"
+command = "~/.config/herdr/confirm-close.sh pane"
+description = "close pane (confirm)"
+width = 40
+height = 3
+
+[[keys.command]]
+key = "prefix+shift+x"
+type = "popup"
+command = "~/.config/herdr/confirm-close.sh tab"
+description = "close tab (confirm)"
+width = 40
+height = 3
+
+# tmux の status-right に合わせたタブバー右側
+[ui]
+tab_bar_right = [
+  { type = "zoom" },
+  { type = "hostname" },
+  { type = "datetime", format = "%a %Y-%m-%d %H:%M" },
+]

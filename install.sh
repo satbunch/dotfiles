@@ -15,6 +15,9 @@ LINKS=(
   "tmux"
   "starship.toml"
   "starship-kanagawa-wave.toml"
+  # herdr は実行時にソケット・ログ・セッションを同じディレクトリに作るため、設定ファイル単位で貼る
+  "herdr/config.toml"
+  "herdr/confirm-close.sh"
 )
 
 # zshはXDG非対応のため ~/(HOME直下) に直接貼る。config/zsh/ 内のファイル名をそのまま使う
@@ -58,6 +61,9 @@ link_one() {
   if [[ -e "$dest" && ! -L "$dest" ]]; then
     backup_if_needed "$dest"
   fi
+
+  # "herdr/config.toml" のようなサブディレクトリ指定のため、親ディレクトリを用意する
+  mkdir -p "$(dirname "$dest")"
 
   # -s: symlink, -f: force, -n: treat dest as normal file if it's a symlink to dir
   ln -sfn "$src" "$dest"
