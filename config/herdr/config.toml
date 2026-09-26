@@ -37,6 +37,9 @@ move_tab_next = "prefix+shift+right"
 # タブ名の変更（tmux の rename-window と同じ prefix+,）
 rename_tab = "prefix+comma"
 
+# デタッチ（tmux と同じ prefix+d）
+detach = "prefix+d"
+
 # ナビゲートモード（prefix+w）で j/k でスペースを選択
 navigate_workspace_down = ["down", "j"]
 navigate_workspace_up = ["up", "k"]
